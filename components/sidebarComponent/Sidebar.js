@@ -17,12 +17,12 @@ function Sidebar({ brand, color, discount, price, rating }) {
          </div> */}
          <div className="accordion category-name" id="accordionExample">
             <AccordionCategory attribute={brand} name="Brand" typeFilter="pa_brand" />
-            {/* <AccordionCategory attribute={price} name="Price" typeFilter="range_price">
+            <AccordionCategory attribute={price} name="Price" typeFilter="range_price">
                <RangeSlider {...price} />
             </AccordionCategory>
             <AccordionCategory attribute={color} name="Color" typeFilter="pa_color" />
             <AccordionCategory attribute={rating} name="Rating" typeFilter="pa_rating"></AccordionCategory>
-            <AccordionCategory attribute={discount} name="Discount" typeFilter="pa_discount"></AccordionCategory> */}
+            <AccordionCategory attribute={discount} name="Discount" typeFilter="pa_discount"></AccordionCategory>
 
             {/* <MostPopular /> */}
          </div>

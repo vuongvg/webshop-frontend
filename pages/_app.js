@@ -16,7 +16,8 @@ function MyApp({ Component, pageProps }) {
          <Layout>
             <Component {...pageProps} />
          </Layout>
-         <script src="/js/ion.rangeSlider.min.js"></script>
+         <Script src="/js/ion.rangeSlider.min.js"></Script>
+         <Script src="/js/jquery-3.5.1.min.js" ></Script>
       </>
    );
 }

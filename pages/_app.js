@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import "bootstrap/dist/css/bootstrap.css";
 import Script from "next/script";
 import { useEffect } from "react";
@@ -15,7 +16,7 @@ function MyApp({ Component, pageProps }) {
          <Layout>
             <Component {...pageProps} />
          </Layout>
-         <Script src="/js/ion.rangeSlider.min.js"></Script>
+         <script src="/js/ion.rangeSlider.min.js"></script>
       </>
    );
 }

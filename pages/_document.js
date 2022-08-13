@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default function Document() {
    return (
@@ -21,8 +21,8 @@ export default function Document() {
             <Main />
             <NextScript />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
-            <script src="/js/jquery-3.5.1.min.js" async></script>
-            <script src="https://unpkg.com/feather-icons" async></script>
+            <script src="/js/jquery-3.5.1.min.js" ></script>
+            <script src="https://unpkg.com/feather-icons" ></script>
          </body>
       </Html>
    );

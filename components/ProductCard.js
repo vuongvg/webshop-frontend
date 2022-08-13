@@ -47,7 +47,7 @@ function ProductCard({
                      </a>
                   </Link>
                </div>
-               <div className="label-block">
+               <div className="label-block" hidden={!featured && !on_sale}>
                   {featured && <span className="label label-black">New</span>}
                   {on_sale && <span className="label label-theme">{discount} % OFF</span>}
                </div>
@@ -104,9 +104,11 @@ function ProductCard({
                <div className="main-price ">
                   <Link href={"/product/" + slug}>
                      <a role="button" className="font-default">
-                        <h5 
+                        <h5
                         // dangerouslySetInnerHTML={{__html:name}}
-                        >{name}</h5>
+                        >
+                           {name}
+                        </h5>
                      </a>
                   </Link>
                   {/* <div className="listing-content">

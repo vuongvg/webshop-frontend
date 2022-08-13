@@ -29,6 +29,7 @@ function SortProducts({ itemPerPage, numPage,total_products }) {
    // }, []);
 
    const handleSort = (value) => {
+      delete query.page
       router.push(
          {
             pathname: url + query.slug && query.slug,
@@ -101,7 +102,7 @@ function SortProducts({ itemPerPage, numPage,total_products }) {
                            <li
                               key={index}
                               onClick={
-                                 () => handleSort({ per_page: num ,page:1})
+                                 () => handleSort({ per_page: num })
                                  // setHitsPerPage(num)
                               }
                               role="button"

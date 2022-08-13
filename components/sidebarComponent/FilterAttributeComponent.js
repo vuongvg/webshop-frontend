@@ -8,10 +8,14 @@ function FilterAttributeComponent({ name, attribute = [], typeFilter, children }
    const firstRender = useRef(true);
    const router = useRouter();
    const query = router.query;
-
+   console.log("render");
    useEffect(() => {
-      if (query[typeFilter]) setListItemChecked(queryDelSlug(query)[typeFilter].split(","));
-   }, []);
+      if (query[typeFilter]) {
+         setListItemChecked(queryDelSlug(query)[typeFilter].split(","));
+      } else {
+         setListItemChecked([]);
+      }
+   }, [router.asPath]);
 
    const handleChange = (e, slug) => {
       const isCheck = e.target.checked;
@@ -53,7 +57,10 @@ function FilterAttributeComponent({ name, attribute = [], typeFilter, children }
                              className="checkbox_animated check-it"
                              type="checkbox"
                              id="flexCheckDefault"
-                             checked={listItemChecked.includes(slug)}
+                             checked={
+                                listItemChecked.includes(slug)
+                                // queryDelSlug(query)[typeFilter]?.split(",").includes(slug)
+                             }
                              onChange={(e) => handleChange(e, slug)}
                           />
                           <label className="form-check-label ms-2" htmlFor="flexCheckDefault12">

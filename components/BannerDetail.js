@@ -5,7 +5,7 @@ function BannerDetail() {
   return (
     <div className="banner-deatils">
     <div className="banner-image">
-       {/* <img src="/images/fashion/banner.jpg" className="img-fluid bg-img blur-up lazyload" alt="" /> */}
+       <img src="/images/fashion/banner.jpg" className="img-fluid bg-img  lazyload" alt="" />
        <div className="banner-content">
           <div>
              <h3>Shop The Latest Trends</h3>

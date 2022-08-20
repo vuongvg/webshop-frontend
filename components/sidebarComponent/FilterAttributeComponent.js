@@ -8,7 +8,6 @@ function FilterAttributeComponent({ name, attribute = [], typeFilter, children }
    const firstRender = useRef(true);
    const router = useRouter();
    const query = router.query;
-   console.log("render");
    useEffect(() => {
       if (query[typeFilter]) {
          setListItemChecked(queryDelSlug(query)[typeFilter].split(","));
@@ -47,25 +46,20 @@ function FilterAttributeComponent({ name, attribute = [], typeFilter, children }
    return (
       <li className="onclick-title " key={name}>
          <h6 hidden={typeFilter}>{name}</h6>
-         <ul className={typeFilter ? "" : "onclick-content"}>
+         <ul className="onclick-content">
             {name === "Price"
                ? children
                : attribute.map(({ count, name, slug, checked }, index) => (
-                    <li key={slug}>
+                    <li key={slug} className="">
                        <div className="form-check ps-0 custome-form-check d-flex">
                           <input
                              className="checkbox_animated check-it"
                              type="checkbox"
                              id="flexCheckDefault"
-                             checked={
-                                listItemChecked.includes(slug)
-                                // queryDelSlug(query)[typeFilter]?.split(",").includes(slug)
-                             }
+                             checked={listItemChecked.includes(slug)}
                              onChange={(e) => handleChange(e, slug)}
                           />
-                          <label className="form-check-label ms-2" htmlFor="flexCheckDefault12">
-                             {/* {value}
-                           {attribute === "discount" && "% and above"} */}
+                          <label className="form-check-label ms-1" htmlFor="flexCheckDefault12">
                              {children || name}
                           </label>
                           <div className="font-light ms-auto">({count})</div>

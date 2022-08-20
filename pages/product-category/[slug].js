@@ -16,12 +16,11 @@ function ProductCategory() {
    const router = useRouter();
    const { query } = router;
    useEffect(() => {
-      if (query.slug)
-      console.log('api');
-         fetchApiProductCategory(query).then((result) => {
-            setData(result.data);
-            setPagination(result.headers);
-         });
+      if (query.slug) console.log("api");
+      fetchApiProductCategory(query).then((result) => {
+         setData(result.data);
+         setPagination(result.headers);
+      });
    }, [query]);
 
    const handleClick = () => {
@@ -44,7 +43,7 @@ function ProductCategory() {
                      <SortSearchProduct itemPerPage={12} />
                      <CustomHitSearchProduct /> */}
                      <BannerDetail />
-                     {page && <SortProducts itemPerPage={20} numPage={page} total_products={total_products}/>}
+                     {page && <SortProducts itemPerPage={20} numPage={page} total_products={total_products} />}
                      <div className="row g-sm-4 g-3 row-cols-lg-4 row-cols-md-3 row-cols-2 gx-sm-4 gx-3 mt-1 custom-gy-5 product-style-2 ratio_asos product-list-section">
                         {data.list_products.map((product, index) => (
                            <ProductCard key={index} {...product} />

@@ -11,8 +11,10 @@ function AccordionCategory({ attribute, name, children, typeFilter }) {
             </button>
          </h2>
          <div id="collapseTwo" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div className="accordion-body category-scroll">
-               <ul className={name === "Rating" ? "" : "category-list"}>
+            {/* <div className="accordion-body category-scroll"> */}
+            <div className="accordion-body ">
+               {/* <ul className="category-list"> */}
+               <ul className={name === "Rating" ? "category-list rating-list" : "category-list"}>
                   {
                      <FilterAttributeComponent attribute={attribute} name={name} typeFilter={typeFilter}>
                         {children}

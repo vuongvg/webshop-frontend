@@ -4,7 +4,7 @@ import { queryDelSlug } from "../common";
 // import { Configure, useHits, useSortBy } from "react-instantsearch-hooks-web";
 // import { functionJqueryProductCategory } from "../Common";
 
-function SortProducts({ itemPerPage, numPage,total_products }) {
+function SortProducts({ itemPerPage, numPage, total_products }) {
    const router = useRouter();
    const { query } = router;
    const page = query.page || "1";
@@ -29,7 +29,7 @@ function SortProducts({ itemPerPage, numPage,total_products }) {
    // }, []);
 
    const handleSort = (value) => {
-      delete query.page
+      delete query.page;
       router.push(
          {
             pathname: url + query.slug && query.slug,
@@ -113,25 +113,34 @@ function SortProducts({ itemPerPage, numPage,total_products }) {
                      </ul>
                   </div>
                </div>
-               <div className="grid-options d-sm-inline-block d-none">
+               {/* <div className="grid-options d-sm-inline-block d-none">
                   <ul className="d-flex">
                      <li className="two-grid">
-                        <a>{/* <img src="/svg/grid-2.svg" className="img-fluid blur-up lazyload" alt="" /> */}</a>
+                        <a>
+                           <img src="/svg/grid-2.svg" className="img-fluid  lazyload" alt="" />
+                           </a>
                      </li>
                      <li className="three-grid d-md-inline-block d-none">
-                        <a>{/* <img src="/svg/grid-3.svg" className="img-fluid blur-up lazyload" alt="" /> */}</a>
+                        <a><img src="/svg/grid-3.svg" className="img-fluid  lazyload" alt="" />
+                        </a>
                      </li>
                      <li className={"grid-btn d-lg-inline-block d-none" + (itemPerPage === 12 && " active")}>
-                        <a>{/* <img src="/svg/grid.svg" className="img-fluid blur-up lazyload" alt="" /> */}</a>
+                        <a>
+                           <img src="/svg/grid.svg" className="img-fluid  lazyload" alt="" />
+                           </a>
                      </li>
                      <li className="five-grid active d-xl-inline-block d-none" hidden={itemPerPage === 12}>
-                        <a>{/* <img src="/svg/grid-5.svg" className="img-fluid blur-up lazyload" alt="" /> */}</a>
+                        <a>
+                           <img src="/svg/grid-5.svg" className="img-fluid  lazyload" alt="" />
+                        </a>
                      </li>
                      <li className="list-btn">
-                        <a>{/* <img src="/svg/list.svg" className="img-fluid blur-up lazyload" alt="" /> */}</a>
+                        <a>
+                           <img src="/svg/list.svg" className="img-fluid  lazyload" alt="" />
+                           </a>
                      </li>
                   </ul>
-               </div>
+               </div> */}
             </div>
          </div>
       </div>

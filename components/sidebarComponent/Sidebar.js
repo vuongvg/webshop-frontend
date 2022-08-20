@@ -5,9 +5,10 @@ import AccordionCategory from "./AccordionCategory";
 
 function Sidebar({ brand, color, discount, price, rating }) {
    rating.map(({ name, slug, count }, index) => {
-      rating[index].name = <RatingDetails average_rating={slug} rating_count={count} hidenReview />;
+      rating[index].name = (
+            <RatingDetails average_rating={slug} rating_count={count} hidenReview />
+      );
    });
-   console.log('render Sidebar');
    return (
       <div className="category-option">
          {/* <div className="button-close mb-3">

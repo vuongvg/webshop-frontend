@@ -1,9 +1,10 @@
 import axios from "axios";
 import { convertObjectToParams } from ".";
-const url = "http://localhost:5001/";
-// const url = "https://webshop-sigma.vercel.app/";
-// const url = "https://webshop-xi.vercel.app/";
+// const url = "http://localhost:5001/";
+const url = "https://webshop-sigma.vercel.app/";
 
+
+// const url = "https://webshop-xi.vercel.app/";
 export const fetchApiProductCategory = async (query) => {
    try {
       const result= await axios.get(`${url}api/product?${convertObjectToParams(query)}`)

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { convertObjectToParams } from ".";
-const url = "http://localhost:5001/api";
-// const url = "https://webshop-sigma.vercel.app/api";
+// const url = "http://localhost:5001/api";
+const url = "https://webshop-sigma.vercel.app/api";
 
 // const url = "https://webshop-xi.vercel.app/";
 export const fetchApiProductCategory = async (query) => {

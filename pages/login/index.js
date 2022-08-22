@@ -1,59 +1,55 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { fetchApiLogin } from "../../common/fetchApi";
+import { useRouter } from "next/router";
 
 function Login() {
-   const handleSubmit = (onSubmit) => {};
+   const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");
+   const [data, setData] = useState({});
+   const [isLoading, setIsLoading] = useState(false);
+   const router = useRouter();
+
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+      const email = e.target[0].value;
+      const password = e.target[1].value;
+      setIsLoading(true);
+      const result = await fetchApiLogin({ email, password });
+      setIsLoading(false);
+      setData(result);
+   };
+
+   useEffect(() => {
+      if (data.token) {
+         console.log(`  ~ data.token`, data.token);
+         router.push("/");
+         localStorage.setItem("token", data.token);
+      }
+   }, [data]);
+
    return (
       <>
          {/* Log In Section Start */}
          <div className="login-section">
             <div className="materialContainer">
-               {/* <form onSubmit={handleSubmit(onSubmit)}> */}
-               <form onSubmit={handleSubmit()}>
+               <form onSubmit={(e) => handleSubmit(e)}>
                   <div className="box">
                      <div className="login-title">
                         <h2>Login</h2>
                      </div>
+                     <div className="valid-feedback d-block text-danger">{!data.token && data.error}</div>
                      <div className="input">
-                        <label htmlFor="email">Email</label>
-                        <input
-                           id="email"
-                           type="text"
-                           // {...register('email', {
-                           //     required: true,
-                           //     pattern:
-                           //         /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
-                           // })}
-                        />
+                        <label htmlFor="email">{!email && "Email"}</label>
+                        <input id="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <span className="spin"></span>
                      </div>
-                     {/* {errors.email?.type === 'required' && (
-                                <div className="valid-feedback d-block text-danger">
-                                    Please fill the email.
-                                </div>
-                            )}
-                            {errors.email?.type === 'pattern' && (
-                                <div className="valid-feedback d-block text-danger">
-                                    Email format incorrect.
-                                </div>
-                            )} */}
 
                      <div className="input">
-                        <label htmlFor="password">Password</label>
-                        <input
-                           id="password"
-                           type="password"
-                           // {...register('password', {
-                           //     required: true,
-                           // })}
-                        />
+                        <label htmlFor="password">{!password && "Password"}</label>
+                        <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                         <span className="spin"></span>
                      </div>
-                     {/* {errors.password?.type === 'required' && (
-                                <div className="valid-feedback d-block text-danger">
-                                    Please fill the password.
-                                </div>
-                            )} */}
 
                      <Link href="/forgot-password">
                         <a className="pass-forgot">Forgot your password?</a>
@@ -61,8 +57,7 @@ function Login() {
 
                      <div className="button login">
                         <button type="submit">
-                           {/* {isLoading ? ( */}
-                           {0 ? (
+                           {isLoading ? (
                               <div className="spinner-border text-light spinner-border-sm" role="status">
                                  <span className="sr-only">Loading...</span>
                               </div>
@@ -72,17 +67,16 @@ function Login() {
                         </button>
                      </div>
 
-                     <p className="sign-category">
+                     {/* <p className="sign-category">
                         <span>Or sign in with</span>
                      </p>
 
                      <div className="row gx-md-3 gy-3">
                         <div className="col-md-6">
-                           {/* <a href="#" onClick={loginFb}> */}
-                           <a href="#" onClick={() => {}}>
+                           <a href="#" onClick={loginFb}>
                               <div className="social-media fb-media" style={{ height: 51.36 }}>
-                                 {/* {isLoadingFb ? ( */}
-                                 {0 ? (
+                                 {isLoadingFb ? (
+                                 
                                     <div className="spinner-border text-light spinner-border-sm" role="status">
                                        <span className="sr-only">Loading...</span>
                                     </div>
@@ -113,12 +107,12 @@ function Login() {
                               </div>
                            </a>
                         </div>
-                     </div>
+                     </div> */}
 
                      <p>
                         Not a member?{" "}
-                        <Link href="/sign-up">
-                           <a className="theme-color">Sign up now</a>
+                        <Link href="/register">
+                           <a className="theme-color">Register now</a>
                         </Link>
                      </p>
                   </div>

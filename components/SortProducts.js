@@ -50,8 +50,7 @@ function SortProducts({ itemPerPage, numPage, total_products }) {
    return (
       <div className="row g-4" id="list-items">
          <h3 hidden={itemPerPage === 20}>
-            {total_products}
-            Results Found
+            {total_products}  Results Found
          </h3>
          {/* {hitsPerPage && <Configure hitsPerPage={hitsPerPage} />} */}
 

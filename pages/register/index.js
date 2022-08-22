@@ -1,19 +1,48 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import { fetchApiRegister } from "../../common/fetchApi";
 
 function Register() {
-  const handleSubmit=(onSubmit)=>{}
+   const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");
+   const [rePassword, setRePassword] = useState("");
+   const [data, setData] = useState("");
+   const [isLoading, setIsLoading] = useState(false);
 
-  return (
-    <div className="login-section">
-    <div className="materialContainer">
-        <form onSubmit={handleSubmit()}>
-            <div className="box">
-                <div className="login-title">
-                    <h2>Register</h2>
-                </div>
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+      const email = e.target[0].value;
+      const password = e.target[1].value;
+      const rePassword = e.target[2].value;
+      console.log(`  ~ rePassword`, { email, password, rePassword });
+      if (password !== rePassword && password) {
+         setData({ error: "mk ko trung" });
+         return;
+      }
+      console.log('aaaaaaaaaaaa');
+      setIsLoading(true);
+      const result = await fetchApiRegister({ email, password });
+      setIsLoading(false);
+      setData(result);
+   };
+   useEffect(() => {
+      if (data.token) {
+         console.log(`  ~ data.token`, data.token);
+         router.push("/");
+         localStorage.setItem("token", data.token);
+      }
+   }, [data]);
+   return (
+      <div className="login-section">
+         <div className="materialContainer">
+            <form onSubmit={(e) => handleSubmit(e)}>
+               <div className="box">
+                  <div className="login-title">
+                     <h2>Register</h2>
+                  </div>
+                  <div className="valid-feedback d-block text-danger">{!data.token && data.error}</div>
 
-                <div className="input">
+                  {/* <div className="input">
                     <label htmlFor="username">User name</label>
                     <input
                         type="text"
@@ -25,8 +54,8 @@ function Register() {
                         id="username"
                     />
                     <span className="spin"></span>
-                </div>
-                {/* {errors.username?.type === 'required' && (
+                </div> */}
+                  {/* {errors.username?.type === 'required' && (
                     <div className="valid-feedback d-block text-danger">
                         Please fill the username.
                     </div>
@@ -42,20 +71,12 @@ function Register() {
                     </div>
                 )} */}
 
-                <div className="input">
-                    <label htmlFor="email">Email Address</label>
-                    <input
-                        id="email"
-                        type="text"
-                        // {...register('email', {
-                        //     required: true,
-                        //     pattern:
-                        //         /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
-                        // })}
-                    />
-                    <span className="spin"></span>
-                </div>
-                {/* {errors.email?.type === 'required' && (
+                  <div className="input">
+                     <label htmlFor="email">{!email && "Email Address"}</label>
+                     <input id="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                     <span className="spin"></span>
+                  </div>
+                  {/* {errors.email?.type === 'required' && (
                     <div className="valid-feedback d-block text-danger">
                         Please fill the email.
                     </div>
@@ -66,19 +87,12 @@ function Register() {
                     </div>
                 )} */}
 
-                <div className="input">
-                    <label htmlFor="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        // {...register('password', {
-                        //     required: true,
-                        //     minLength: 6,
-                        // })}
-                    />
-                    <span className="spin"></span>
-                </div>
-                {/* {errors.password?.type === 'required' && (
+                  <div className="input">
+                     <label htmlFor="password">{!password && "Password"}</label>
+                     <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                     <span className="spin"></span>
+                  </div>
+                  {/* {errors.password?.type === 'required' && (
                     <div className="valid-feedback d-block text-danger">
                         Please fill the password.
                     </div>
@@ -89,24 +103,12 @@ function Register() {
                     </div>
                 )} */}
 
-                <div className="input">
-                    <label htmlFor="repassword">
-                        Confirm Password
-                    </label>
-                    <input
-                        type="password"
-                        id="repassword"
-                        // {...register('repassword', {
-                        //     required: true,
-                        //     validate: {
-                        //         mathPassword: (v) =>
-                        //             v === getValues('password'),
-                        //     },
-                        // })}
-                    />
-                    <span className="spin"></span>
-                </div>
-                {/* {errors.repassword?.type === 'required' && (
+                  <div className="input">
+                     <label htmlFor="repassword">{!rePassword && "Confirm Password"}</label>
+                     <input type="password" id="repassword" value={rePassword} onChange={(e) => setRePassword(e.target.value)} />
+                     <span className="spin"></span>
+                  </div>
+                  {/* {errors.repassword?.type === 'required' && (
                     <div className="valid-feedback d-block text-danger">
                         Please fill the re password.
                     </div>
@@ -117,25 +119,19 @@ function Register() {
                     </div>
                 )} */}
 
-                <div className="button login">
-                    <button>
-                        {/* {isLoading ? ( */}
-                        {0 ? (
-                            <div
-                                className="spinner-border text-light spinner-border-sm"
-                                role="status"
-                            >
-                                <span className="sr-only">
-                                    Loading...
-                                </span>
-                            </div>
+                  <div className="button login">
+                     <button>
+                        {isLoading ? (
+                           <div className="spinner-border text-light spinner-border-sm" role="status">
+                              <span className="sr-only">Loading...</span>
+                           </div>
                         ) : (
-                            <span className="m-0">Sign Up</span>
+                           <span className="m-0">Sign Up</span>
                         )}
-                    </button>
-                </div>
+                     </button>
+                  </div>
 
-                <p className="sign-category">
+                  {/* <p className="sign-category">
                     <span>Or sign up with</span>
                 </p>
 
@@ -151,8 +147,7 @@ function Register() {
                                 className="social-media fb-media"
                                 style={{ height: 51.36 }}
                             >
-                                {/* {isLoadingFb ? ( */}
-                                {0 ? (
+                                {isLoadingFb ? (
                                     <div
                                         className="spinner-border text-light spinner-border-sm"
                                         role="status"
@@ -191,19 +186,17 @@ function Register() {
                             </div>
                         </a>
                     </div>
-                </div>
-                <p>
-                    <Link href="/login">
-                        <a className="theme-color">
-                            Already have an account?
-                        </a>
-                    </Link>
-                </p>
-            </div>
-        </form>
-    </div>
-</div>
-  )
+                </div> */}
+                  <p>
+                     <Link href="/login">
+                        <a className="theme-color">Already have an account?</a>
+                     </Link>
+                  </p>
+               </div>
+            </form>
+         </div>
+      </div>
+   );
 }
 
-export default Register
+export default Register;

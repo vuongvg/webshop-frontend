@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import RatingDetails from "./RatingDetails";
 
+
 function ProductCard({
    id,
    price,
@@ -36,14 +37,14 @@ function ProductCard({
                <div className="front">
                   <Link href={"/product/" + slug} passHref>
                      <a>
-                        <img src={front_image || acf.front_image} className="bg-img blur-up lazyload" alt="" />
+                        <img src={front_image || acf.front_image} className="bg-img lazyload" alt="" />
                      </a>
                   </Link>
                </div>
                <div className="back">
                   <Link href={"/product/" + slug} passHref>
                      <a>
-                        <img src={back_image || acf.back_image} className="bg-img blur-up lazyload" alt="" />
+                        <img src={back_image || acf.back_image} className="bg-img lazyload" alt="" />
                      </a>
                   </Link>
                </div>

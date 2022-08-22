@@ -13,6 +13,7 @@ import "../styles/vendors/slick/slick.css";
 import "../styles/vendors/slick/slick-theme.css";
 import "../styles/globals.css";
 import "../styles/compare.css";
+import '../styles/product-card.css'
 
 function MyApp({ Component, pageProps }) {
    useEffect(() => {

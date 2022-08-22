@@ -16,11 +16,12 @@ function ProductCategory() {
    const router = useRouter();
    const { query } = router;
    useEffect(() => {
-      if (query.slug) console.log("api");
-      fetchApiProductCategory(query).then((result) => {
-         setData(result.data);
-         setPagination(result.headers);
-      });
+      if (query.slug) {
+         fetchApiProductCategory(query).then((result) => {
+            setData(result.data);
+            setPagination(result.headers);
+         });
+      }
    }, [query]);
 
    const handleClick = () => {

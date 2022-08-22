@@ -10,15 +10,14 @@ import SortProducts from "../../components/SortProducts";
 function SearchProduct() {
    const { query } = useRouter();
    const { keysearch } = query;
-   console.log(`  ~ keysearch`, keysearch)
    const [time, setTime] = useState();
    const [data, setData] = useState({ list_products: [], _total: "" });
    const [pagination, setPagination] = useState({});
    // const { page,  per_page,  total_page,  total_products } = pagination;
-   const { page, "per-page": per_page, "total-page": total_page, "total-products": total_products } = pagination;
+   const { page, "per-page": per_page, "total-page": total_page=1, "total-products": total_products } = pagination;
 
    useEffect(() => {
-      if (keysearch != "undefine") {
+      if (keysearch!="undefined") {
          fetchApiSearchProduct(query).then((result) => {
             setData(result.data);
             setPagination(result.headers);

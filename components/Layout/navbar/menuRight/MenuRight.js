@@ -1,12 +1,24 @@
 import Link from "next/link";
-import React from "react";
-import { BsBell } from 'react-icons/bs';
-import { BsSearch } from 'react-icons/bs';
-import { BsHeart } from 'react-icons/bs';
-import { FiUser } from 'react-icons/fi';
-import { FiShoppingBag } from 'react-icons/fi';
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import { BsBell } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
+import { BsHeart } from "react-icons/bs";
+import { FiUser } from "react-icons/fi";
+import { FiShoppingBag } from "react-icons/fi";
 
 function MenuRight() {
+   const [isLogin, setIsLogin] = useState(null);
+   const router = useRouter();
+   useEffect(() => {
+      const token = localStorage.getItem("token");
+      setIsLogin(token);
+   }, [router.pathname]);
+
+   const handleLogout=()=>{
+      localStorage.removeItem("token")
+      router.push('/login')
+   }
    return (
       <div className="menu-right">
          <ul>
@@ -27,10 +39,10 @@ function MenuRight() {
             </li>
             <li className="onhover-dropdown">
                <div className="cart-media">
-                  {/* {cookie ? ( */}
-                  {0 ? (
+                  {isLogin ? (
                      <span className="avatar">
-                        <img src={cookie !== null ? user.avatar : ""} alt="" />
+                        {/* <img src={isLogin ? "" : ""} alt="" /> */}
+                        <FiUser fontSize={20} />
                      </span>
                   ) : (
                      <FiUser fontSize={20} />
@@ -39,21 +51,15 @@ function MenuRight() {
                </div>
                <div className="onhover-div profile-dropdown">
                   <ul>
-                     {/* {cookie !== null ? ( */}
-                     {0 ? (
+                     {isLogin ? (
                         <>
                            <li>
-                              <Link href="/user-dashboard">
+                              <Link href="/user">
                                  <a className="d-block">My account</a>
                               </Link>
                            </li>
                            <li>
-                              <a
-                                 className="d-block"
-                                 onClick={() => {
-                                    signOut();
-                                 }}
-                              >
+                              <a className="d-block" onClick={handleLogout}>
                                  Logout
                               </a>
                            </li>

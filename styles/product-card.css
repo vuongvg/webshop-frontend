@@ -1,0 +1,13 @@
+.img-wrapper img {
+   width: 100%;
+}
+.materialContainer .box .input {
+   margin-top: 5px;
+   margin-bottom: 15px;
+}
+
+.valid-feedback {
+   min-height: 20px;
+   margin-top: 15px;
+   font-size: 14px;
+}

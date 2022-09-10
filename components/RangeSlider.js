@@ -1,4 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useRouter } from "next/router";
+import Script from "next/script";
 import React, { useEffect } from "react";
 
 let rangeSlice = "";
@@ -55,9 +57,12 @@ function RangeSlider({ min, max, minHandle, maxHandle }) {
    ]);
 
    return (
+      <>
       <div className="range-slider category-list">
          <input type="text" className="js-range-slider" defaultValue="" />
       </div>
+      {/* <Script src="/js/ion.rangeSlider.min.js"></Script> */}
+      </>
    );
 }
 

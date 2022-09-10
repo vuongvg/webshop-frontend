@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { fetchApiProductCategory } from "../../common/fetchApi";
+import { fetchApiProductByCategory } from "../../common/fetchApi";
 import BannerDetail from "../../components/BannerDetail";
+import Breadcrumb from "../../components/BreadCrumb";
 import PagePagination from "../../components/PagePagination";
 import ProductCard from "../../components/ProductCard";
 import Sidebar from "../../components/sidebarComponent/Sidebar";
 import SortProducts from "../../components/SortProducts";
+import SubscribeBox from "../../components/SubscribeBox";
 
 function ProductCategory() {
    const [data, setData] = useState({ list_products: [] });
@@ -17,7 +19,7 @@ function ProductCategory() {
    const { query } = router;
    useEffect(() => {
       if (query.slug) {
-         fetchApiProductCategory(query).then((result) => {
+         fetchApiProductByCategory(query).then((result) => {
             setData(result.data);
             setPagination(result.headers);
          });
@@ -29,7 +31,16 @@ function ProductCategory() {
    };
 
    return (
-      <div>
+      <>
+         <Breadcrumb
+            // title={data && data.list_products[0]?.name}
+            bredcrumbList={[
+               {
+                  title: "Product category",
+                  href: "/product-category",
+               },
+            ]}
+         />
          <section className="section-b-space">
             <div className="container">
                <div className="row">
@@ -55,7 +66,8 @@ function ProductCategory() {
                </div>
             </div>
          </section>
-      </div>
+         <SubscribeBox />
+      </>
    );
 }
 

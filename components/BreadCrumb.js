@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 
 function Breadcrumb({ title, bredcrumbList = [] }) {
+
     return (
         <section className="breadcrumb-section section-b-space">
             <ul className="circles">

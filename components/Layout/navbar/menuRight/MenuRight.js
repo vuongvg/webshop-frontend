@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
@@ -10,20 +11,25 @@ import { FiShoppingBag } from "react-icons/fi";
 function MenuRight() {
    const [isLogin, setIsLogin] = useState(null);
    const router = useRouter();
+
    useEffect(() => {
       const token = localStorage.getItem("token");
       setIsLogin(token);
    }, [router.pathname]);
 
-   const handleLogout=()=>{
-      localStorage.removeItem("token")
-      router.push('/login')
-   }
+   const handleLogout = () => {
+      localStorage.removeItem("token");
+      router.push("/login");
+   };
+   const handleOpenSearchBar = () => {
+      document.getElementById("search-full").classList.add("open");
+      document.getElementById("input-search").focus();
+   };
    return (
       <div className="menu-right">
          <ul>
             <li>
-               <div className="search-box">
+               <div className="search-box" onClick={handleOpenSearchBar}>
                   <BsSearch fontSize={20} />
                </div>
             </li>
@@ -114,7 +120,7 @@ function MenuRight() {
                         <ul className="custom-scroll">
                            <li>
                               <div className="media">
-                                 <img src="/images/fashion/product/front/1.jpg" className="img-fluid blur-up lazyload" alt="" />
+                                 <img src="/images/fashion/product/front/1.jpg" className="img-fluid  lazyload" alt="" />
                                  <div className="media-body">
                                     <h6>Slim Fit Plastic Coat</h6>
                                     <div className="qty-with-price">
@@ -131,7 +137,7 @@ function MenuRight() {
                            </li>
                            <li>
                               <div className="media">
-                                 <img src="/images/fashion/product/front/7.jpg" className="img-fluid blur-up lazyload" alt="" />
+                                 <img src="/images/fashion/product/front/7.jpg" className="img-fluid  lazyload" alt="" />
                                  <div className="media-body">
                                     <h6>Womens Stylish Jacket</h6>
                                     <div className="qty-with-price">

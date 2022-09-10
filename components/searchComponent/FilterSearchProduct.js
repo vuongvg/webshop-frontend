@@ -30,7 +30,7 @@ function FilterSearchProduct() {
          <div className="col-12">
             <div className="filter-show-button mb-1">
                <a href="#" className="mobile-filter border-top-0">
-                  <i data-feather="align-left" className="img-fluid blur-up lazyloaded"></i>
+                  <i data-feather="align-left" className="img-fluid lazyloaded"></i>
                   <h5>latest filter</h5>
                </a>
             </div>

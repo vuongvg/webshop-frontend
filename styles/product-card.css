@@ -2,7 +2,7 @@
    width: 100%;
 }
 .materialContainer .box .input {
-   margin-top: 5px;
+   margin-top: 0px;
    margin-bottom: 15px;
 }
 
@@ -10,4 +10,25 @@
    min-height: 20px;
    margin-top: 15px;
    font-size: 14px;
+}
+
+.search-suggestion {
+   margin-top: 10px;
+}
+.custom-scroll {
+   background-color: aliceblue;
+}
+
+.product-box .product-details h5 {
+   width: unset;
+  min-width:  55px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+   content: unset;
+  /* object-fit: contain; */
+}
+
+.collection-banner .contain-banner .banner-content.with-bg{
+   background-color: rgba(35, 35, 35, 0.73);
+   color: #fff;
 }

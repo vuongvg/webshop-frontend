@@ -22,7 +22,6 @@ function Login() {
 
    useEffect(() => {
       if (data.token) {
-         console.log(`  ~ data.token`, data.token);
          router.push("/");
          localStorage.setItem("token", data.token);
       }

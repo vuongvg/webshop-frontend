@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React, { useEffect } from "react";
 import RatingDetails from "./RatingDetails";
-
 
 function ProductCard({
    id,
@@ -37,14 +37,14 @@ function ProductCard({
                <div className="front">
                   <Link href={"/product/" + slug} passHref>
                      <a>
-                        <img src={front_image || acf.front_image} className="bg-img lazyload" alt="" />
+                        <img src={front_image.src} className="bg-img lazyload" alt={front_image.alt} />
                      </a>
                   </Link>
                </div>
                <div className="back">
                   <Link href={"/product/" + slug} passHref>
                      <a>
-                        <img src={back_image || acf.back_image} className="bg-img lazyload" alt="" />
+                        <img src={back_image.src||front_image.src} className="bg-img lazyload" alt={back_image.alt} />
                      </a>
                   </Link>
                </div>
@@ -54,6 +54,7 @@ function ProductCard({
                </div>
                <div
                   // hidden={disAction}
+                  hidden={true}
                   className="cart-wrap"
                >
                   <ul>
@@ -102,9 +103,9 @@ function ProductCard({
                   </Link>
                   <RatingDetails average_rating={rating} rating_count={rating_count} showNum />
                </div>
-               <div className="main-price ">
+               <div className="main-price">
                   <Link href={"/product/" + slug}>
-                     <a role="button" className="font-default">
+                     <a role="button" className="font-default ">
                         <h5
                         // dangerouslySetInnerHTML={{__html:name}}
                         >

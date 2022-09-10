@@ -21,9 +21,12 @@ export default function Document() {
          <body>
             <Main />
             <NextScript />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
             <script src="/js/jquery-3.5.1.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
             <script src="https://unpkg.com/feather-icons"></script>
+            <script src="/js/slick/slick.js"></script>
+            <script src="/js/slick/slick-animation.min.js"></script>
+            <script src="/js/slick/custom_slick.js"></script>
          </body>
       </Html>
    );

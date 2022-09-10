@@ -13,7 +13,7 @@ import "../styles/vendors/slick/slick.css";
 import "../styles/vendors/slick/slick-theme.css";
 import "../styles/globals.css";
 import "../styles/compare.css";
-import '../styles/product-card.css'
+import "../styles/product-card.css";
 
 function MyApp({ Component, pageProps }) {
    useEffect(() => {
@@ -26,7 +26,8 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
          </Layout>
          <Script src="/js/ion.rangeSlider.min.js"></Script>
-         <Script src="/js/jquery-3.5.1.min.js" ></Script>
+         {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" /> */}
+         {/* <Script src="/js/jquery-3.5.1.min.js"></Script> */}
       </>
    );
 }

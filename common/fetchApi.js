@@ -4,12 +4,12 @@ import { convertObjectToParams } from ".";
 const url = "https://webshop-sigma.vercel.app/api";
 
 // const url = "https://webshop-xi.vercel.app/";
-export const fetchApiProductCategory = async (query) => {
+export const fetchApiProductByCategory = async (query) => {
    try {
       const result = await axios.get(`${url}/product?${convertObjectToParams(query)}`);
       return result;
    } catch (error) {
-      console.log(`  ~ error fetchApiProductCategory`, error);
+      console.log(`  ~ error fetchApiProductByCategory`, error);
       return { data: { list_products: [] } };
    }
 };
@@ -24,9 +24,10 @@ export const fetchApiSearchProduct = async (query) => {
    }
 };
 
-export const fetchApiProductBySlug = async (slug) => {
+export const fetchApiSingleProductBySlug = async (slug) => {
    try {
-      return await axios.get(`${url}/product/${slug}`);
+      const data= await axios.get(`${url}/product/${slug}`);
+      return data
    } catch (error) {
       console.log(`  ~ error fetchApiProductBySlug`, error);
       return { data: {} };
@@ -35,20 +36,46 @@ export const fetchApiProductBySlug = async (slug) => {
 
 export const fetchApiLogin = async (data) => {
    try {
-     const result= await axios.post(`${url}/auth/login`, data);
-      return result.data
+      const result = await axios.post(`${url}/auth/login`, data);
+      return result.data;
    } catch (error) {
       console.log(`  ~ error fetchApiLogin`, error);
-      return {error:error.response.data}
+      return { error: error.response.data };
    }
 };
 
-export const fetchApiRegister= async (data) => {
+export const fetchApiHome = async () => {
    try {
-     const result= await axios.post(`${url}/auth/register`, data);
-      return result.data
+      const result = await axios.get(`${url}/home`);
+      return result.data;
    } catch (error) {
-      console.log(`  ~ error fetchApiLogin`, error);
-      return {error:error.response.data}
+      console.log(`  ~ error fetchApiHome`, error);
+      return { error: error.response.data };
+   }
+};
+
+export const fetchApiRegister = async (data) => {
+   try {
+      const result = await axios.post(`${url}/auth/register`, data);
+      return result.data;
+   } catch (error) {
+      console.log(`  ~ error fetchApiRegister`, error);
+      return { error: error.response.data };
+   }
+};
+export const fetchApiCategories = async () => {
+   try {
+      const result = await axios.get(`${url}/categories`);
+      return result.data;
+   } catch (error) {
+      console.log(`  ~ error fetchApiCategories`, error);
+   }
+};
+export const fetchApiProductHint = async (keysearch) => {
+   try {
+      const result = await axios.get(`${url}/search-hint?keysearch=`+keysearch);
+      return result.data;
+   } catch (error) {
+      console.log(`  ~ error fetchApiProductHint`, error);
    }
 };

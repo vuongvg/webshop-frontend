@@ -14,11 +14,12 @@ function SearchProduct() {
    const [data, setData] = useState({ list_products: [], _total: "" });
    const [pagination, setPagination] = useState({});
    // const { page,  per_page,  total_page,  total_products } = pagination;
-   const { page, "per-page": per_page, "total-page": total_page=1, "total-products": total_products } = pagination;
+   const { page , "per-page": per_page, "total-page": total_page = 1, "total-products": total_products } = pagination;
 
    useEffect(() => {
-      if (keysearch!="undefined") {
+      if (keysearch != "undefined") {
          fetchApiSearchProduct(query).then((result) => {
+            console.log(`  ~ result`, result);
             setData(result.data);
             setPagination(result.headers);
          });
@@ -32,7 +33,7 @@ function SearchProduct() {
             <div className="container">
                <div className="row">
                   <div className="col-lg-12 col-12 ratio_30">
-                     <FilterSearchProduct/>
+                     <FilterSearchProduct />
                      <SortProducts itemPerPage={10} numPage={page} total_products={total_products} />
                      <div
                         className={

@@ -1,37 +1,10 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import MenuMain from "./menuRight/MenuMain";
 import MenuRight from "./menuRight/MenuRight";
+import SearchBar from "./searchBar/SearchBar";
 
 function Navbar() {
-   const [value, setValue] = useState("");
-   const router = useRouter();
-   const {
-      pathname,
-      query: { keysearch },
-   } = router;
-   useEffect(() => {
-      if (pathname !== "/search-product") setValue("");
-   }, [pathname]);
-
-   useEffect(() => {
-      setValue(keysearch?.replace("_", " "));
-   }, [keysearch]);
-
-   // const handleChange = (e) => {
-   //    const valueInput = e.target.value.replace(" ", "_");
-   //    router.push("/search-product?keysearch=" + valueInput);
-   // };
-
-   const handleChange = (e) => {
-      setValue(e.target.value);
-   };
-   const handleSubmit = (e) => {
-      e.preventDefault();
-      router.push("/search-product?keysearch=" + value.replace(" ", "_"));
-   };
-
    return (
       <>
          <div className="d-flex pt-2 bg-light fs-6">
@@ -48,20 +21,15 @@ function Navbar() {
                <Link href="/product-category/women">
                   <a className="mx-3">Women</a>
                </Link>
+               <Link href="/product-category/men">
+                  <a className="mx-3">Men</a>
+               </Link>
                <Link href="/product-category/dresses">
                   <a>Dresses</a>
                </Link>
                <Link href="/login">
                   <a className="mx-3">Login</a>
                </Link>
-            </div>
-            <div className="m-auto">
-               <form action="" onSubmit={handleSubmit}>
-                  <input type="text" value={value || ""} onChange={(e) => handleChange(e)} />
-                  <button className="border" type="submit">
-                     Search
-                  </button>
-               </form>
             </div>
          </div>
          {/* ############################################################# */}
@@ -93,6 +61,7 @@ function Navbar() {
                            <MenuMain />
 
                            <MenuRight />
+                           <SearchBar/>
                         </div>
                      </div>
                   </div>

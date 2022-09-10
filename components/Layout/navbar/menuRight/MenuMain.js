@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
 
@@ -16,6 +17,11 @@ function MenuMain() {
                    <i className="fa fa-angle-left"></i>
                 </span>
              </div>
+          </li>
+          <li>
+             <Link href="/">
+                <a className="nav-link menu-title">Home</a>
+             </Link>
           </li>
           <li>
              <Link href="/product-category">
@@ -58,7 +64,7 @@ function MenuMain() {
                    </Link>
                 </li>
              </ul>
-          </li>
+          </li> */}
           <li>
              <Link href="/faq">
                 <a className="nav-link menu-title">Faq</a>
@@ -69,7 +75,12 @@ function MenuMain() {
                 <a className="nav-link menu-title">Contact us</a>
              </Link>
           </li>
-          <li className="mobile-poster d-flex d-xl-none">
+          <li>
+             <Link href="/about-us">
+                <a className="nav-link menu-title">About us</a>
+             </Link>
+          </li>
+          {/* <li className="mobile-poster d-flex d-xl-none">
              <img src="/images/pwa.png" className="img-fluid" alt="" />
              <div className="mobile-contain">
                 <h5>Enjoy app-like experience</h5>

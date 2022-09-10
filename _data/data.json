@@ -1,0 +1,1042 @@
+[
+   {
+       "_id": "6310a699aa77832a2e3c5186",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/1a/0f/1a0fd4e27eac7622defc030bfb07c81adf51b980.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "V-neck drawstring-detail dress Fila Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/98/32/983208ad9fd29d660bd6221eb5d0f68118405c37.jpg],origin[dam],category[ladies_dresses_mididresses],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "V-neck drawstring-detail dress Fila Ladies Dresses"
+       },
+       "brand": {
+           "name": "Fila",
+           "slug": "fila"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1078003002",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F98%2F32%2F983208ad9fd29d660bd6221eb5d0f68118405c37.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_mididresses%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "V-neck drawstring-detail dress Fila Ladies Dresses Brown/Zebra print"
+               },
+               "name": "Brown/Zebra print",
+               "slug": "brown-zebra-print"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "V-neck drawstring-detail dress",
+       "slug": "v-neck-drawstring-detail-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 39.99,
+       "regular_price": 39.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "v-neck drawstring-detail dress, fila, ladies, dresses, brown, zebra, print"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5168",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/03/e2/03e237128037d682ae919ef04f8d33c16a131f4f.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Rib-knit dress Louis Philippe Sport Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/6b/34/6b3474b8fed3e6716598523ca5307cfed122e773.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Rib-knit dress Louis Philippe Sport Ladies Dresses"
+       },
+       "brand": {
+           "name": "Louis Philippe Sport",
+           "slug": "louis-philippe-sport"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1034720001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F6b%2F34%2F6b3474b8fed3e6716598523ca5307cfed122e773.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Rib-knit dress Louis Philippe Sport Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Rib-knit dress",
+       "slug": "rib-knit-dress-4",
+       "on_sale": false,
+       "discount": 0,
+       "price": 27.99,
+       "regular_price": 27.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "rib-knit dress, louis philippe sport, ladies, dresses, black"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c517e",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/ba/ae/baae6cfece742d8f119f6730a431aa8ee419479a.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "V-neck dress Nike Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/17/96/17967b58dbf09d7d98190d6542b955990bfd2b24.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "V-neck dress Nike Ladies Dresses"
+       },
+       "brand": {
+           "name": "Nike",
+           "slug": "nike"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1103148005",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F17%2F96%2F17967b58dbf09d7d98190d6542b955990bfd2b24.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "V-neck dress Nike Ladies Dresses Cream/Zebra print"
+               },
+               "name": "Cream/Zebra print",
+               "slug": "cream-zebra-print"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "V-neck dress",
+       "slug": "v-neck-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 17.99,
+       "regular_price": 17.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "v-neck dress, nike, ladies, dresses, cream, zebra, print"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5154",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/fe/95/fe9575c53201925b00efa56ba407e4035121c53a.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "V-neck rib-knit dress Nike Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/bd/06/bd0669ad89af5e8354fe844277c43f94a03f2b24.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "V-neck rib-knit dress Nike Ladies Dresses"
+       },
+       "brand": {
+           "name": "Nike",
+           "slug": "nike"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1100867001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbd%2F06%2Fbd0669ad89af5e8354fe844277c43f94a03f2b24.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "V-neck rib-knit dress Nike Ladies Dresses Cream"
+               },
+               "name": "Cream",
+               "slug": "cream"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "V-neck rib-knit dress",
+       "slug": "v-neck-rib-knit-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "v-neck rib-knit dress, nike, ladies, dresses, cream"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5178",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/34/1c/341c0a817185844ba34babf379de68530ddd134e.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "Satin wrap dress Louis Philippe Sport Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/af/c1/afc18b4f9622936b00da727d37a65463f1a0ebae.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Satin wrap dress Louis Philippe Sport Ladies Dresses"
+       },
+       "brand": {
+           "name": "Louis Philippe Sport",
+           "slug": "louis-philippe-sport"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1099476002",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Faf%2Fc1%2Fafc18b4f9622936b00da727d37a65463f1a0ebae.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Satin wrap dress Louis Philippe Sport Ladies Dresses Black/Patterned"
+               },
+               "name": "Black/Patterned",
+               "slug": "black-patterned"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Satin wrap dress",
+       "slug": "satin-wrap-dress-2",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "satin wrap dress, louis philippe sport, ladies, dresses, black, patterned"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5156",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/d3/0d/d30dde125f063e7a6abf2590c09d1eb05e7ba430.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Zip-top rib-knit dress Zara Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/d3/0d/d30dde125f063e7a6abf2590c09d1eb05e7ba430.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Zip-top rib-knit dress Zara Ladies Dresses"
+       },
+       "brand": {
+           "name": "Zara",
+           "slug": "zara"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1112448003",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd3%2F0d%2Fd30dde125f063e7a6abf2590c09d1eb05e7ba430.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Zip-top rib-knit dress Zara Ladies Dresses Cream"
+               },
+               "name": "Cream",
+               "slug": "cream"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Zip-top rib-knit dress",
+       "slug": "zip-top-rib-knit-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 34.99,
+       "regular_price": 34.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "zip-top rib-knit dress, zara, ladies, dresses, cream"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5182",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/8f/cb/8fcb04659353a960b5eab12477d21819006d6fc9.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "V-neck sequined dress Nike Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/29/a8/29a8a73b1de209766e15a6d746e85cdf76d59701.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "V-neck sequined dress Nike Ladies Dresses"
+       },
+       "brand": {
+           "name": "Nike",
+           "slug": "nike"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1120485001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F29%2Fa8%2F29a8a73b1de209766e15a6d746e85cdf76d59701.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "V-neck sequined dress Nike Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "V-neck sequined dress",
+       "slug": "v-neck-sequined-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 34.99,
+       "regular_price": 34.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "v-neck sequined dress, nike, ladies, dresses, black"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5180",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/06/b2/06b24d2f05a63dd2e30b62214e69a669b9d2483a.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Silk-blend kaftan Louis Philippe Sport Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/06/b2/06b24d2f05a63dd2e30b62214e69a669b9d2483a.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Silk-blend kaftan Louis Philippe Sport Ladies Dresses"
+       },
+       "brand": {
+           "name": "Louis Philippe Sport",
+           "slug": "louis-philippe-sport"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1072528001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F06%2Fb2%2F06b24d2f05a63dd2e30b62214e69a669b9d2483a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Silk-blend kaftan Louis Philippe Sport Ladies Dresses Charcoal grey"
+               },
+               "name": "Charcoal grey",
+               "slug": "charcoal-grey"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Silk-blend kaftan",
+       "slug": "silk-blend-kaftan",
+       "on_sale": false,
+       "discount": 0,
+       "price": 119.99,
+       "regular_price": 119.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "silk-blend kaftan, louis philippe sport, ladies, dresses, charcoal, grey"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5166",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/90/9e/909e2e3bb92f6121c614cd67551d94934c0f2df1.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "Bouclé dress Fila Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/a4/ed/a4ed42373c763b43d5d95276d3079f129bf7c9c3.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Bouclé dress Fila Ladies Dresses"
+       },
+       "brand": {
+           "name": "Fila",
+           "slug": "fila"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1086254001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa4%2Fed%2Fa4ed42373c763b43d5d95276d3079f129bf7c9c3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Bouclé dress Fila Ladies Dresses Cream"
+               },
+               "name": "Cream",
+               "slug": "cream"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Bouclé dress",
+       "slug": "boucl-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 39.99,
+       "regular_price": 39.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "bouclé dress, fila, ladies, dresses, cream"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5164",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/1e/b1/1eb115068eed8f8fbf63dfb0f3badd8f984bfa69.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Rib-knit dress Louis Philippe Sport Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/1e/b1/1eb115068eed8f8fbf63dfb0f3badd8f984bfa69.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Rib-knit dress Louis Philippe Sport Ladies Dresses"
+       },
+       "brand": {
+           "name": "Louis Philippe Sport",
+           "slug": "louis-philippe-sport"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1092139001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F1e%2Fb1%2F1eb115068eed8f8fbf63dfb0f3badd8f984bfa69.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Rib-knit dress Louis Philippe Sport Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Rib-knit dress",
+       "slug": "rib-knit-dress-3",
+       "on_sale": false,
+       "discount": 0,
+       "price": 24.99,
+       "regular_price": 24.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "rib-knit dress, louis philippe sport, ladies, dresses, black"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5160",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/64/93/64938634d8bb258b54a0516a398baeaca6ca7cae.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Rib-knit dress Fila Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/61/bf/61bfea7b57c360bb00ac51d302abdfb03ae97120.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Rib-knit dress Fila Ladies Dresses"
+       },
+       "brand": {
+           "name": "Fila",
+           "slug": "fila"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1096496001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F61%2Fbf%2F61bfea7b57c360bb00ac51d302abdfb03ae97120.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Rib-knit dress Fila Ladies Dresses Light grey marl"
+               },
+               "name": "Light grey marl",
+               "slug": "light-grey-marl"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Rib-knit dress",
+       "slug": "rib-knit-dress-2",
+       "on_sale": false,
+       "discount": 0,
+       "price": 17.99,
+       "regular_price": 17.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "rib-knit dress, fila, ladies, dresses, light, grey, marl"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c515a",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/d6/c1/d6c1cfd7f68386d14d32eaf9db37b206fe5f6f79.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Oversized shirt dress Louis Philippe Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/ee/37/ee373fd4640b6b2055f8ebf962be3f94ed5dc90a.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Oversized shirt dress Louis Philippe Ladies Dresses"
+       },
+       "brand": {
+           "name": "Louis Philippe",
+           "slug": "louis-philippe"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1103334001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fee%2F37%2Fee373fd4640b6b2055f8ebf962be3f94ed5dc90a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Oversized shirt dress Louis Philippe Ladies Dresses Light beige/Leopard-print"
+               },
+               "name": "Light beige/Leopard-print",
+               "slug": "light-beige-leopard-print"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Oversized shirt dress",
+       "slug": "oversized-shirt-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 17.99,
+       "regular_price": 17.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "oversized shirt dress, louis philippe, ladies, dresses, light, beige, leopard, print"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5188",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/22/8c/228c6fe89a12ac5d589abc5b8ce1889dd0e5829c.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "Satin wrapover shirt dress HRX Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/65/a3/65a36d8a5f0ce52e991a433f5ae9a5fa58ddcaf6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Satin wrapover shirt dress HRX Ladies Dresses"
+       },
+       "brand": {
+           "name": "HRX",
+           "slug": "hrx"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1088102002",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F65%2Fa3%2F65a36d8a5f0ce52e991a433f5ae9a5fa58ddcaf6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Satin wrapover shirt dress HRX Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Satin wrapover shirt dress",
+       "slug": "satin-wrapover-shirt-dress-2",
+       "on_sale": false,
+       "discount": 0,
+       "price": 19.99,
+       "regular_price": 19.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "satin wrapover shirt dress, hrx, ladies, dresses, black"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c515e",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/b1/fd/b1fd2b4ac12f8f90cc6841ef3e964c40793c3b23.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Collared rib-knit dress HRX Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/39/37/3937b75b5a1b64a11a4627b1824c1f345bcbe97e.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Collared rib-knit dress HRX Ladies Dresses"
+       },
+       "brand": {
+           "name": "HRX",
+           "slug": "hrx"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1088726001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F39%2F37%2F3937b75b5a1b64a11a4627b1824c1f345bcbe97e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Collared rib-knit dress HRX Ladies Dresses Beige"
+               },
+               "name": "Beige",
+               "slug": "beige"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Collared rib-knit dress",
+       "slug": "collared-rib-knit-dress-2",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "collared rib-knit dress, hrx, ladies, dresses, beige"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5158",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/71/5f/715f0ee38875e40530812d96fc160b44d89d61ff.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Collared rib-knit dress Fila Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/78/23/7823c421a0ba0ff7e6aa109a02aee7994cf5b3f6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Collared rib-knit dress Fila Ladies Dresses"
+       },
+       "brand": {
+           "name": "Fila",
+           "slug": "fila"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1088726002",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F78%2F23%2F7823c421a0ba0ff7e6aa109a02aee7994cf5b3f6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Collared rib-knit dress Fila Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Collared rib-knit dress",
+       "slug": "collared-rib-knit-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "collared rib-knit dress, fila, ladies, dresses, black"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5150",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/75/b9/75b9897b2fa76e7259edc154b29ff7a69240893c.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Collared denim dress HRX Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/ec/71/ec7180fe4b31e5694d1ebc5f72c1292df3a2e669.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Collared denim dress HRX Ladies Dresses"
+       },
+       "brand": {
+           "name": "HRX",
+           "slug": "hrx"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1071018001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fec%2F71%2Fec7180fe4b31e5694d1ebc5f72c1292df3a2e669.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Collared denim dress HRX Ladies Dresses Denim blue"
+               },
+               "name": "Denim blue",
+               "slug": "denim-blue"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Collared denim dress",
+       "slug": "collared-denim-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "collared denim dress, hrx, ladies, dresses, denim, blue"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c515c",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/e7/04/e704517e40dc1559fd1793413a53871d7fcea495.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
+           "alt": "Satin wrap dress H&M Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/f8/7e/f87e93da371ce59e6887346c48eb9c98a386754e.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]",
+           "alt": "Satin wrap dress H&M Ladies Dresses"
+       },
+       "brand": {
+           "name": "H&M",
+           "slug": "h-m"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1099476004",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff8%2F7e%2Ff87e93da371ce59e6887346c48eb9c98a386754e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Satin wrap dress H&M Ladies Dresses Green"
+               },
+               "name": "Green",
+               "slug": "green"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Satin wrap dress",
+       "slug": "satin-wrap-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "satin wrap dress, h&m, ladies, dresses, green"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c516a",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/4d/da/4dda5b9619142ebf676103b56f45ca87a03143e2.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "Fine-knit cardigan dress Puma Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/71/ce/71ce4badba7345cb60f35aea7333b17f6f4c91f8.jpg],origin[dam],category[ladies_dresses_maxidresses],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Fine-knit cardigan dress Puma Ladies Dresses"
+       },
+       "brand": {
+           "name": "Puma",
+           "slug": "puma"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1088802002",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F71%2Fce%2F71ce4badba7345cb60f35aea7333b17f6f4c91f8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_maxidresses%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Fine-knit cardigan dress Puma Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Fine-knit cardigan dress",
+       "slug": "fine-knit-cardigan-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 34.99,
+       "regular_price": 34.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "fine-knit cardigan dress, puma, ladies, dresses, black"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c517a",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/7a/43/7a437070b2d9403b525b5765d9cfaadc14a18281.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+           "alt": "Puff-sleeved crêpe dress Puma Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/8c/8c/8c8c834fdc80e1a07b760a0afeb8bc719fe0997e.jpg],origin[dam],category[ladies_dresses_maxidresses],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "Puff-sleeved crêpe dress Puma Ladies Dresses"
+       },
+       "brand": {
+           "name": "Puma",
+           "slug": "puma"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1088419001",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8c%2F8c%2F8c8c834fdc80e1a07b760a0afeb8bc719fe0997e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_maxidresses%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "Puff-sleeved crêpe dress Puma Ladies Dresses Black/Spotted"
+               },
+               "name": "Black/Spotted",
+               "slug": "black-spotted"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "Puff-sleeved crêpe dress",
+       "slug": "puff-sleeved-cr-pe-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 29.99,
+       "regular_price": 29.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "puff-sleeved crêpe dress, puma, ladies, dresses, black, spotted"
+   },
+   {
+       "_id": "6310a699aa77832a2e3c5170",
+       "front_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/8a/9e/8a9e72ca7479a53c87e2f9704e173b03eded7ba8.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "H&M+ Puff-sleeved wrap dress HRX Ladies Dresses"
+       },
+       "back_image": {
+           "src": "https://lp2.hm.com/hmgoepprod?set=source[/8a/9e/8a9e72ca7479a53c87e2f9704e173b03eded7ba8.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+           "alt": "H&M+ Puff-sleeved wrap dress HRX Ladies Dresses"
+       },
+       "brand": {
+           "name": "HRX",
+           "slug": "hrx"
+       },
+       "color": [
+           {
+               "image": {
+                   "id": "1099284003",
+                   "src": "//lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F8a%2F9e%2F8a9e72ca7479a53c87e2f9704e173b03eded7ba8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fminiature%5D",
+                   "alt": "H&M+ Puff-sleeved wrap dress HRX Ladies Dresses Black"
+               },
+               "name": "Black",
+               "slug": "black"
+           }
+       ],
+       "size": [
+           "L",
+           "M",
+           "S",
+           "XL",
+           "XXL"
+       ],
+       "categories": [
+           {
+               "name": "Ladies",
+               "slug": "ladies"
+           },
+           {
+               "name": "Dresses",
+               "slug": "dresses"
+           }
+       ],
+       "name": "H&M+ Puff-sleeved wrap dress",
+       "slug": "h-m-puff-sleeved-wrap-dress",
+       "on_sale": false,
+       "discount": 0,
+       "price": 27.99,
+       "regular_price": 27.99,
+       "rating": 0,
+       "rating_count": 0,
+       "tags": "h&m+ puff-sleeved wrap dress, hrx, ladies, dresses, black"
+   }
+]

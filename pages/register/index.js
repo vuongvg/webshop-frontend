@@ -1,5 +1,6 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import React, { Fragment, useEffect, useState } from "react";
 import { fetchApiRegister } from "../../common/fetchApi";
 
 function Register() {
@@ -8,28 +9,25 @@ function Register() {
    const [rePassword, setRePassword] = useState("");
    const [data, setData] = useState("");
    const [isLoading, setIsLoading] = useState(false);
+   const router = useRouter();
 
    const handleSubmit = async (e) => {
       e.preventDefault();
       const email = e.target[0].value;
       const password = e.target[1].value;
       const rePassword = e.target[2].value;
-      console.log(`  ~ rePassword`, { email, password, rePassword });
       if (password !== rePassword && password) {
-         setData({ error: "mk ko trung" });
+         setData({ error: "Password does not match" });
          return;
       }
-      console.log('aaaaaaaaaaaa');
       setIsLoading(true);
       const result = await fetchApiRegister({ email, password });
       setIsLoading(false);
       setData(result);
    };
    useEffect(() => {
-      if (data.token) {
-         console.log(`  ~ data.token`, data.token);
-         router.push("/");
-         localStorage.setItem("token", data.token);
+      if (data.infoUser) {
+         router.push("/login");
       }
    }, [data]);
    return (
@@ -126,7 +124,7 @@ function Register() {
                               <span className="sr-only">Loading...</span>
                            </div>
                         ) : (
-                           <span className="m-0">Sign Up</span>
+                           <span className="m-0">Register</span>
                         )}
                      </button>
                   </div>

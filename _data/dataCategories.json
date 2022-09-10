@@ -1,0 +1,159 @@
+[
+   {
+      "name": "Baby",
+      "slug": "baby",
+      "categories": [
+         { "name": "Accessories", "slug": "accessories" },
+         { "name": "Basics", "slug": "basics" },
+         { "name": "Clothing", "slug": "clothing" },
+         { "name": "Fancy dress costumes", "slug": "fancy-dress-costumes" },
+         { "name": "Hospital bag essentials", "slug": "hospital-bag-essentials" },
+         { "name": "New arrivals", "slug": "new-arrivals" },
+         { "name": "Outerwear", "slug": "outerwear" },
+         { "name": "Rompers", "slug": "rompers" },
+         { "name": "Shoes", "slug": "shoes" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/ea/49/ea4901926932b71aecd5f225d31164a5dd560d72.jpg],origin[dam],category[],type[ENVIRONMENT],res[m],hmver[1]&call=url[file:/product/style]",
+         "alt": "Adjustable-fit set Fila Baby Hospital bag essentials"
+      }
+   },
+   {
+      "name": "Beauty",
+      "slug": "beauty",
+      "categories": [
+         { "name": "Body bath", "slug": "body-bath" },
+         { "name": "Brushes tools", "slug": "brushes-tools" },
+         { "name": "Fragrance", "slug": "fragrance" },
+         { "name": "Hair care", "slug": "hair-care" },
+         { "name": "Makeup", "slug": "makeup" },
+         { "name": "Makeup bags", "slug": "makeup-bags" },
+         { "name": "Mini size", "slug": "mini-size" },
+         { "name": "Nails", "slug": "nails" },
+         { "name": "Skin care", "slug": "skin-care" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/cc/2d/cc2d288b12977c22e4e6adb62f58cc6ae4401db3.jpg],origin[dam],category[ladies_beauty_eyes_eyeshadow],type[ENVIRONMENT],res[m],hmver[3]&call=url[file:/product/style]",
+         "alt": "Eye shadow Fila Beauty Makeup"
+      }
+   },
+   {
+      "name": "Divided",
+      "slug": "divided",
+      "categories": [
+         { "name": "Basics", "slug": "basics" },
+         { "name": "Cardigans jumpers", "slug": "cardigans-jumpers" },
+         { "name": "Dresses", "slug": "dresses" },
+         { "name": "Hoodies sweatshirts", "slug": "hoodies-sweatshirts" },
+         { "name": "Jackets coats", "slug": "jackets-coats" },
+         { "name": "Shirts and blouses", "slug": "shirts-and-blouses" },
+         { "name": "Shorts", "slug": "shorts" },
+         { "name": "Skirts", "slug": "skirts" },
+         { "name": "Tops", "slug": "tops" },
+         { "name": "Trousers leggings", "slug": "trousers-leggings" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/61/f9/61f9f791df725a596cf07bec7213b082e77872be.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+         "alt": "Short cargo shorts Puma Divided Shorts"
+      }
+   },
+   {
+      "name": "Kids",
+      "slug": "kids",
+      "categories": [
+         { "name": "Accessories", "slug": "accessories" },
+         { "name": "Basics", "slug": "basics" },
+         { "name": "Clothing", "slug": "clothing" },
+         { "name": "Fancy dress costumes", "slug": "fancy-dress-costumes" },
+         { "name": "Halloween", "slug": "halloween" },
+         { "name": "Kids exclusive", "slug": "kids-exclusive" },
+         { "name": "New arrivals", "slug": "new-arrivals" },
+         { "name": "Outerwear", "slug": "outerwear" },
+         { "name": "Shoes", "slug": "shoes" },
+         { "name": "Sportswear", "slug": "sportswear" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/31/ef/31efeaa0165841072ecabbd1917db3968fe2cdad.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+         "alt": "3-pack T-shirts H&M Kids Basics"
+      }
+   },
+   {
+      "name": "Ladies",
+      "slug": "ladies",
+      "categories": [
+         { "name": "Blazers and waistcoats", "slug": "blazers-and-waistcoats" },
+         { "name": "Cardigans and jumpers", "slug": "cardigans-and-jumpers" },
+         { "name": "Dresses", "slug": "dresses" },
+         { "name": "Hoodies sweatshirts", "slug": "hoodies-sweatshirts" },
+         { "name": "Jackets and coats", "slug": "jackets-and-coats" },
+         { "name": "Jeans", "slug": "jeans" },
+         { "name": "Shirts and blouses", "slug": "shirts-and-blouses" },
+         { "name": "Shoes", "slug": "shoes" },
+         { "name": "Tops", "slug": "tops" },
+         { "name": "Trousers", "slug": "trousers" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/bf/9f/bf9fe250fc12b38479e346ed0998c44bcbdfb697.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+         "alt": "Smocked dress Puma Sale Ladies Dresses"
+      }
+   },
+   {
+      "name": "Men",
+      "slug": "men",
+      "categories": [
+         { "name": "Basics", "slug": "basics" },
+         { "name": "Hoodies sweatshirts", "slug": "hoodies-sweatshirts" },
+         { "name": "Jeans", "slug": "jeans" },
+         { "name": "Shirts", "slug": "shirts" },
+         { "name": "Shorts", "slug": "shorts" },
+         { "name": "Sportswear", "slug": "sportswear" },
+         { "name": "Suits blazers", "slug": "suits-blazers" },
+         { "name": "T shirts and tanks", "slug": "t-shirts-and-tanks" },
+         { "name": "Trousers", "slug": "trousers" },
+         { "name": "Underwear", "slug": "underwear" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/06/75/067566f225843eb9b71aa41eb7ecadfc71cd2202.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[3]&call=url[file:/product/style]",
+         "alt": "Regular Fit Oxford shirt Zara Men Shirts"
+      }
+   },
+   {
+      "name": "Sale",
+      "slug": "sale",
+      "categories": [
+         { "name": "Basics", "slug": "basics" },
+         { "name": "Blazerswaistcoats", "slug": "blazerswaistcoats" },
+         { "name": "Dresses", "slug": "dresses" },
+         { "name": "Shirtsblouses", "slug": "shirtsblouses" },
+         { "name": "Shoes", "slug": "shoes" },
+         { "name": "Shorts", "slug": "shorts" },
+         { "name": "Skirts", "slug": "skirts" },
+         { "name": "Swimwear", "slug": "swimwear" },
+         { "name": "Tops", "slug": "tops" },
+         { "name": "Trousers", "slug": "trousers" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/dd/c5/ddc55cf025c62ba7c211cfd5aaffd8e8d067ac93.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+         "alt": "Flounce-trimmed cotton top Nike Sale Ladies Tops"
+      }
+   },
+   {
+      "name": "Sport",
+      "slug": "sport",
+      "categories": [
+         { "name": "Accessories", "slug": "accessories" },
+         { "name": "Clothing", "slug": "clothing" },
+         { "name": "Clothing", "slug": "clothing" },
+         { "name": "Outerwear", "slug": "outerwear" },
+         { "name": "Outerwear", "slug": "outerwear" },
+         { "name": "Sports accessories", "slug": "sports-accessories" },
+         { "name": "Sports accessories", "slug": "sports-accessories" },
+         { "name": "Sportswear", "slug": "sportswear" },
+         { "name": "Swimwear", "slug": "swimwear" }
+      ],
+      "image": {
+         "src": "https://lp2.hm.com/hmgoepprod?set=source[/a0/2d/a02d022b9a46df929a148ebcb66a198b526ec90a.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/style]",
+         "alt": "H&M+ Sports tights Louis Philippe Sport Sport Ladies Sportswear"
+      }
+   }
+]

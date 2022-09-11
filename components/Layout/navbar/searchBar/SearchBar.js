@@ -24,7 +24,7 @@ function SearchBar() {
    }, [pathname]);
 
    useEffect(() => {
-      setValue(keysearch?.replace("_", " "));
+      setValue(keysearch?.replaceAll("_", " "));
    }, [keysearch]);
 
    const handleChangeSearchInput = (e) => {
@@ -36,7 +36,7 @@ function SearchBar() {
    };
    const handleSubmitSearch = (e) => {
       e.preventDefault();
-      router.push("/search-product?keysearch=" + value.replace(" ", "_"));
+      router.push("/search-product?keysearch=" + value.replaceAll(" ", "_"));
    };
 
    const handleCloseSearchBar = () => {

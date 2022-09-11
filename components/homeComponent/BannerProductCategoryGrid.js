@@ -87,7 +87,7 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                               ></h2> */}
                               <h2
                                  dangerouslySetInnerHTML={{
-                                    __html: dataBannerProduct[7].name,
+                                    __html:New +' '+ dataBannerProduct[7].name,
                                  }}
                               ></h2>
                               <button type="button" className="btn btn-solid-default">
@@ -161,7 +161,7 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                               <a className="contain-banner">
                                  <div className="banner-content with-bg">
                                     <h3 className="mb-1">
-                                       {dataBannerProduct[5].name}
+                                    New{' '}{dataBannerProduct[5].name}
                                        </h3>
                                     <span
                                        dangerouslySetInnerHTML={{
@@ -193,7 +193,7 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                               <a className="contain-banner">
                                  <div className="banner-content with-bg">
                                     <h3 className="mb-1">
-                                       {dataBannerProduct[4].name}
+                                      New{' '} {dataBannerProduct[4].name}
                                     </h3>
                                     <span
                                        dangerouslySetInnerHTML={{

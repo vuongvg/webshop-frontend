@@ -160,13 +160,13 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                         }>
                               <a className="contain-banner">
                                  <div className="banner-content with-bg">
-                                    <h3 className="mb-1">Lorem, ipsum
-                                       {/* {dataBannerProduct.list[2].link.name} */}
+                                    <h3 className="mb-1">
+                                       {dataBannerProduct[5].name}
                                        </h3>
                                     <span
                                        dangerouslySetInnerHTML={{
                                           // __html: dataBannerProduct.list[2].sub_title,
-                                          __html: 'Lorem, ipsum ',
+                                          __html: 'Discount -70%',
                                        }}
                                     ></span>
                                  </div>
@@ -192,13 +192,13 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                             >
                               <a className="contain-banner">
                                  <div className="banner-content with-bg">
-                                    <h3 className="mb-1">Lorem ipsum 
-                                       {/* {dataBannerProduct.list[3].link.name} */}
+                                    <h3 className="mb-1">
+                                       {dataBannerProduct[4].name}
                                     </h3>
                                     <span
                                        dangerouslySetInnerHTML={{
                                           // __html: dataBannerProduct.list[3].sub_title,
-                                          __html: 'Lorem ipsum '
+                                          __html: 'Discount -70%',
                                        }}
                                     ></span>
                                  </div>

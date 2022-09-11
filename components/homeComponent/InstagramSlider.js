@@ -2,11 +2,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 
-function InstagramSlider({ dataProduct }) {
-   // const {  products, title, subtitle } = dataProduct;
-   const products = dataProduct;
-   const title = "InstagramSlider";
-   const subtitle = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+function InstagramSlider({ dataProduct: products }) {
    useEffect(() => {
       let instaSlider = $(".insta-slider").slick({
          dots: true,
@@ -14,7 +10,7 @@ function InstagramSlider({ dataProduct }) {
          speed: 500,
          arrows: false,
          slidesToShow: 5,
-          autoplay: 2000,
+         autoplay: 2000,
          slidesToScroll: 5,
          responsive: [
             {
@@ -113,8 +109,8 @@ function InstagramSlider({ dataProduct }) {
             <div className="row">
                <div className="col">
                   <div className="title title-2 text-center">
-                     <h2>{title}</h2>
-                     <h5 className="text-color">{subtitle}</h5>
+                     <h2>Instagram Shop</h2>
+                     <h5 className="text-color">New Collection</h5>
                   </div>
                   <div className="product-style-1 instagram-2 product-wrapper">
                      <div className="insta-slider instagram-wrap">

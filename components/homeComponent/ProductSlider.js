@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
 import ProductCard from "../ProductCard";
 
-export default function ProductSlider({ dataProduct }) {
+export default function ProductSlider({ dataProduct:products }) {
    // const { title, subtitle, products } = dataProduct;
-   const {
-      title = "ProductSlider",
-      subtitle = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa.",
-      products = dataProduct,
-   } = {};
    useEffect(() => {
       let sliderProductSlider = $(".slide-4").slick({
          dots: true,
@@ -53,8 +48,8 @@ export default function ProductSlider({ dataProduct }) {
             <div className="row m-0">
                <div className="col-sm-12 p-0">
                   <div className="title title-2 text-center">
-                     <h2>{title}</h2>
-                     <h5 className="text-color">{subtitle}</h5>
+                     <h2>New Arrival</h2>
+                     <h5 className="text-color">Our collection</h5>
                   </div>
                   <div className="product-wrapper product-style-2 slide-4 p-0 light-arrow bottom-space">
                      {products.map((item, index) => (

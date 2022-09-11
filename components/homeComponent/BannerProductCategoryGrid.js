@@ -43,8 +43,8 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                   <div className="title title-2 text-center">
                      {/* <h2>{dataBannerProduct.title}</h2>
                      <h5 className="text-color">{dataBannerProduct.subtitle}</h5> */}
-                     <h2>BannerProductCategoryGrid</h2>
-                     <h5 className="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium.</h5>
+                     <h2>New Offers</h2>
+                     <h5 className="text-color">Just For You</h5>
                   </div>
                </div>
             </div>

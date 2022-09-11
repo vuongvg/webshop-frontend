@@ -101,8 +101,8 @@ function CategorySlider({ dataCategorySlider }) {
                   <div className="title title-2 text-center">
                      {/* <h2>{dataCategorySlider.title}</h2>
                      <h5 className="text-color">{dataCategorySlider.subtitle}</h5> */}
-                     <h2>CategorySlider</h2>
-                     <h5 className="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium.</h5>
+                     <h2>Our Category</h2>
+                     <h5 className="text-color">Our collection</h5>
                   </div>
                </div>
             </div>

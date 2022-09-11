@@ -122,7 +122,7 @@ function ProductCard({
                         }}
                      ></p>
                   </div> */}
-                  <h5 className="theme-color">${price}</h5>
+                  <h5 className="theme-color">${price.toLocaleString("en-US", {style:"currency", currency:"USD"})}</h5>
                   {/* <button className="btn listing-content">Add To Cart</button> */}
                </div>
             </div>

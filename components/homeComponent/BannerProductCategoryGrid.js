@@ -61,7 +61,7 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                            <img
                               // src={dataBannerProduct.list[0].background_image}
                               src={dataBannerProduct[7].image.src}
-                              className="bg-img lazyload image-top"
+                              className="bg-img lazyload "
                               // alt={dataBannerProduct.list[0].link.name}
                            />
                         </div>
@@ -112,7 +112,7 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                                  <img
                                     // src={dataBannerProduct.list[1].background_image}
                                     src={dataBannerProduct[6].image.src}
-                                    className="bg-img lazyload image-top"
+                                    className="bg-img lazyload "
                                     // alt={dataBannerProduct.list[1].name}
                                  />
                               </div>

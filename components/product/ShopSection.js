@@ -43,7 +43,7 @@ function ShopSection(props = {}) {
    //     });
    // };
 
-   const addWislistHandle = () => {}
+   const addWislistHandle = () => {};
    // const addWislistHandle = () => {
    //     dispatch(
    //         productAdded({
@@ -177,7 +177,7 @@ function ShopSection(props = {}) {
                               </div>
 
                               <h3 className="price-detail">
-                                 ${price}
+                                 {price.toLocaleString("en-US", { style: "currency", currency: "USD" })}
                                  {on_sale && (
                                     <>
                                        <del>{regular_price}</del>
@@ -214,31 +214,23 @@ function ShopSection(props = {}) {
                               </div>
 
                               <ul className="product-count shipping-order">
-                                            <li>
-                                                <img
-                                                    src="/images/gif/truck.png"
-                                                    className="img-fluid lazyload"
-                                                    alt="image"
-                                                />
-                                                {1 && (
-                                                // {shipping_required && (
-                                                    <span className="lang">
-                                                        Free shipping for orders
-                                                        above $500 USD
-                                                    </span>
-                                                )}
-                                            </li>
-                                        </ul>
+                                 <li>
+                                    <img src="/images/gif/truck.png" className="img-fluid lazyload" alt="image" />
+                                    {1 && (
+                                       // {shipping_required && (
+                                       <span className="lang">Free shipping for orders above $500 USD</span>
+                                    )}
+                                 </li>
+                              </ul>
 
-                              {/* {date_on_sale_to && ( */}
-                              {1 && (
+                              {/* {date_on_sale_to && (
                                             <Countdown
                                                 stock_quantity={stock_quantity}
                                                 date_on_sale_to={
                                                     date_on_sale_to
                                                 }
                                             />
-                                        )}
+                                        )} */}
 
                               <div className="border-product">
                                  <h6 className="product-title d-block">share it</h6>

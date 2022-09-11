@@ -36,16 +36,16 @@ export default function SliderItemClothes({ slideData }) {
                         <h3>
                            {product.on_sale ? (
                               <Fragment>
-                                 {/* ${product.price} */}
-                                 $66
+                                 {product.price.toLocaleString("en-US", {style:"currency", currency:"USD"})}
+                               
                                  <span className="theme-color">
-                                    {/* <del>${product.regular_price}</del> */}
-                                    <del>${99}</del>
+                                    <del>${product.regular_price}</del>
+                                    
                                  </span>
                               </Fragment>
                            ) : (
-                              // `$${product.price}`
-                              `$${22}`
+                              product.price.toLocaleString("en-US", {style:"currency", currency:"USD"})
+                              
                            )}
                         </h3>
                         <div className="add-btn">

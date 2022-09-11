@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 function BannerProductCategoryGrid({ dataBannerProduct }) {
-   console.log(`  ~ dataBannerProduct`, dataBannerProduct)
+   console.log(`  ~ dataBannerProduct`, dataBannerProduct);
    useEffect(() => {
       (function ($) {
          "use strict";
@@ -77,7 +77,9 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                               <span
                                  className="span-top"
                                  dangerouslySetInnerHTML={{
-                                    __html: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                                    // __html: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                                    __html: "New " + dataBannerProduct[7].name,
+                                    
                                  }}
                               ></span>
                               {/* <h2
@@ -85,11 +87,6 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                                     __html: dataBannerProduct.list[0].title,
                                  }}
                               ></h2> */}
-                              <h2
-                                 dangerouslySetInnerHTML={{
-                                    __html:New +' '+ dataBannerProduct[7].name,
-                                 }}
-                              ></h2>
                               <button type="button" className="btn btn-solid-default">
                                  Shop Now
                               </button>
@@ -103,7 +100,7 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                      <div className="col-lg-12 ratio_40">
                         <Link
                            href={
-                              "/product-category/" +  dataBannerProduct[6].slug
+                              "/product-category/" + dataBannerProduct[6].slug
                               // dataBannerProduct.list[1].link.slug
                            }
                         >
@@ -126,12 +123,12 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                                     ></h3> */}
                                     <h3
                                        dangerouslySetInnerHTML={{
-                                          __html: dataBannerProduct[6].name,
+                                          __html: "New " + dataBannerProduct[6].name,
                                        }}
                                     ></h3>
 
                                     <Link
-                                       href={"/product-category/" +  dataBannerProduct[6].slug} //  dataBannerProduct.list[1].link.slug}
+                                       href={"/product-category/" + dataBannerProduct[6].slug} //  dataBannerProduct.list[1].link.slug}
                                     >
                                        <button type="button" className="btn btn-solid-default">
                                           Shop Now
@@ -150,23 +147,21 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                                  className="bg-img blur-up lazyload"
                                  alt={dataBannerProduct.list[2].link.name}
                               /> */}
-                              <img
-                                 src={dataBannerProduct[5].image.src}
-                                 className="bg-img lazyload image-top"
-                              />
+                              <img src={dataBannerProduct[5].image.src} className="bg-img lazyload image-top" />
                            </div>
-                           <Link href={"/product-category/" +  dataBannerProduct[5].slug
-                           // dataBannerProduct.list[2].link.slug
-                        }>
+                           <Link
+                              href={
+                                 "/product-category/" + dataBannerProduct[5].slug
+                                 // dataBannerProduct.list[2].link.slug
+                              }
+                           >
                               <a className="contain-banner">
                                  <div className="banner-content with-bg">
-                                    <h3 className="mb-1">
-                                    New{' '}{dataBannerProduct[5].name}
-                                       </h3>
+                                    <h3 className="mb-1">New {dataBannerProduct[5].name}</h3>
                                     <span
                                        dangerouslySetInnerHTML={{
                                           // __html: dataBannerProduct.list[2].sub_title,
-                                          __html: 'Discount -70%',
+                                          __html: "Discount -70%",
                                        }}
                                     ></span>
                                  </div>
@@ -182,23 +177,19 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                                  className="bg-img blur-up lazyload"
                                  alt={dataBannerProduct.list[3].link.name}
                               /> */}
-                                      <img
-                                 src={dataBannerProduct[4].image.src}
-                                 className="bg-img lazyload image-top"
-                              />
+                              <img src={dataBannerProduct[4].image.src} className="bg-img lazyload image-top" />
                            </div>
-                           <Link href={"/product-category/" + dataBannerProduct[4].slug}
-                           //  dataBannerProduct.list[3].link.slug}
-                            >
+                           <Link
+                              href={"/product-category/" + dataBannerProduct[4].slug}
+                              //  dataBannerProduct.list[3].link.slug}
+                           >
                               <a className="contain-banner">
                                  <div className="banner-content with-bg">
-                                    <h3 className="mb-1">
-                                      New{' '} {dataBannerProduct[4].name}
-                                    </h3>
+                                    <h3 className="mb-1">New {dataBannerProduct[4].name}</h3>
                                     <span
                                        dangerouslySetInnerHTML={{
                                           // __html: dataBannerProduct.list[3].sub_title,
-                                          __html: 'Discount -70%',
+                                          __html: "Discount -70%",
                                        }}
                                     ></span>
                                  </div>

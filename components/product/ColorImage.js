@@ -9,8 +9,12 @@ import React, {
 function ColorImage({ color = [] }, ref) {
     const [colorSelect, setColorSelect] = useState('');
 
-    const handleClick = (e, product_variation_name) => {
-        setColorSelect(product_variation_name);
+    // const handleClick = (e,name) => {
+    //     console.log(`  ~ e,name`, e,name)
+        
+    // }
+    const handleClick = (e, name) => {
+        setColorSelect(name);
         const element = document.getElementsByClassName('image-item');
         Array.from(element).map((item) => item.classList.remove('active'));
         e.target.parentElement.classList.add('active');
@@ -30,13 +34,13 @@ function ColorImage({ color = [] }, ref) {
                 <div className="size-box">
                     <ul className="image-section m-0">
                         {color.map(
-                            ({ image, product_variation }, index) => (
+                            ({ image, name }, index) => (
                                 <li
                                     key={index}
                                     className="border rounded image-item"
                                     role="button"
                                     onClick={(e) =>
-                                        handleClick(e, product_variation.name)
+                                        handleClick(e, name)
                                     }
                                 >
                                     <img

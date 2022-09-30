@@ -1,7 +1,11 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { fetchApiLogin } from "../../common/fetchApi";
 import { useRouter } from "next/router";
+import { setCookie, getCookie } from "cookies-next";
+import Head from "next/head";
+import { NextResponse } from "next/server";
+import UserContext from "../../store/userContext";
 
 function Login() {
    const [email, setEmail] = useState("");
@@ -9,26 +13,32 @@ function Login() {
    const [data, setData] = useState({});
    const [isLoading, setIsLoading] = useState(false);
    const router = useRouter();
-
+   const user = useContext(UserContext);
    const handleSubmit = async (e) => {
       e.preventDefault();
       const email = e.target[0].value;
       const password = e.target[1].value;
       setIsLoading(true);
       const result = await fetchApiLogin({ email, password });
+      user.login(result.user)
       setIsLoading(false);
       setData(result);
    };
 
    useEffect(() => {
-      if (data.token) {
+      if (data.token) { 
          router.push("/");
          localStorage.setItem("token", data.token);
+         localStorage.setItem("refreshToken", data.refreshToken);
+         setCookie("login", true,{maxAge:300});
       }
    }, [data]);
 
    return (
       <>
+         <Head>
+            <title>Login</title>
+         </Head>
          {/* Log In Section Start */}
          <div className="login-section">
             <div className="materialContainer">

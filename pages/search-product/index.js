@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fetchApiSearchProduct } from "../../common/fetchApi";
@@ -14,7 +15,7 @@ function SearchProduct() {
    const [data, setData] = useState({ list_products: [], _total: "" });
    const [pagination, setPagination] = useState({});
    // const { page,  per_page,  total_page,  total_products } = pagination;
-   const { page , "per-page": per_page, "total-page": total_page = 1, "total-products": total_products } = pagination;
+   const { page, "per-page": per_page, "total-page": total_page = 1, "total-products": total_products } = pagination;
 
    useEffect(() => {
       if (keysearch != "undefined") {
@@ -27,6 +28,9 @@ function SearchProduct() {
    }, [query]);
    return (
       <div>
+         <Head>
+            <title>Search</title>
+         </Head>
          <Breadcrumb title={"Search product"} />
          {/* <p>Total: {total_products}</p> */}
          <section className="section-b-space">

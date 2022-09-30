@@ -1,25 +1,43 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BsBell } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { BsHeart } from "react-icons/bs";
 import { FiUser } from "react-icons/fi";
 import { FiShoppingBag } from "react-icons/fi";
+import { deleteCookie } from "cookies-next";
+import { fetchApiLogout } from "../../../../common/fetchApi";
+import UserContext from "../../../../store/userContext";
+import { setCookie } from "cookies-next";
+import CartDropdown from "./CartDropdown";
 
 function MenuRight() {
-   const [isLogin, setIsLogin] = useState(null);
+   const [isLogin, setIsLogin] = useState(false);
    const router = useRouter();
-
+   const user = useContext(UserContext);
    useEffect(() => {
-      const token = localStorage.getItem("token");
-      setIsLogin(token);
-   }, [router.pathname]);
+      if (user?._id) {
+         setIsLogin(true);
+         setCookie("login", true,{maxAge:300});
+      } else {
+         setIsLogin(false);
+         // deleteCookie("login");
+      }
+   }, [user._id]);
 
    const handleLogout = () => {
-      localStorage.removeItem("token");
-      router.push("/login");
+      const refreshToken = localStorage.getItem("refreshToken");
+      fetchApiLogout(refreshToken)
+         .then((res) => {
+            localStorage.removeItem("token");
+            localStorage.removeItem("refreshToken");
+            deleteCookie("login");
+            router.push("/login");
+         })
+         .catch((err) => console.log(err));
    };
    const handleOpenSearchBar = () => {
       document.getElementById("search-full").classList.add("open");
@@ -60,7 +78,7 @@ function MenuRight() {
                      {isLogin ? (
                         <>
                            <li>
-                              <Link href="/user">
+                              <Link href="/user-dashboard">
                                  <a className="d-block">My account</a>
                               </Link>
                            </li>
@@ -93,80 +111,12 @@ function MenuRight() {
                   <Link href="/wishlist">
                      <a>
                         <BsHeart fontSize={20} />
-                        <span className="label label-theme rounded-pill">0{/* {productLikedState.ids.length} */}</span>
+                        <span className="label label-theme rounded-pill">{user?.wishList?.length}</span>
                      </a>
                   </Link>
                </div>
             </li>
-            <li className="onhover-dropdown cart-dropdown">
-               {/* <SmallCart /> */}
-               <>
-                  <button type="button" className="btn btn-solid-default btn-spacing">
-                     <i data-feather="shopping-cart" className="pe-2"></i>
-                     <span>$5686.25</span>
-                  </button>
-                  <div className="onhover-div">
-                     <div className="cart-menu">
-                        <div className="cart-title">
-                           <h6>
-                              <i data-feather="shopping-bag"></i>
-                              <FiShoppingBag fontSize={20} />
-                              <span className="label label-theme rounded-pill">5</span>
-                           </h6>
-                           <span className="d-md-none d-block">
-                              <i className="fas fa-arrow-right back-cart"></i>
-                           </span>
-                        </div>
-                        <ul className="custom-scroll">
-                           <li>
-                              <div className="media">
-                                 <img src="/images/fashion/product/front/1.jpg" className="img-fluid  lazyload" alt="" />
-                                 <div className="media-body">
-                                    <h6>Slim Fit Plastic Coat</h6>
-                                    <div className="qty-with-price">
-                                       <span>$78.00</span>
-                                       <span>
-                                          <input type="number" className="form-control" defaultValue="1" />
-                                       </span>
-                                    </div>
-                                 </div>
-                                 <button type="button" className="btn-close d-block d-md-none" aria-label="Close">
-                                    <i className="fas fa-times"></i>
-                                 </button>
-                              </div>
-                           </li>
-                           <li>
-                              <div className="media">
-                                 <img src="/images/fashion/product/front/7.jpg" className="img-fluid  lazyload" alt="" />
-                                 <div className="media-body">
-                                    <h6>Womens Stylish Jacket</h6>
-                                    <div className="qty-with-price">
-                                       <span>$24.00</span>
-                                       <span>
-                                          <input type="number" className="form-control" defaultValue="1" />
-                                       </span>
-                                    </div>
-                                 </div>
-                                 <button type="button" className="btn-close d-block d-md-none" aria-label="Close">
-                                    <i className="fas fa-times"></i>
-                                 </button>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-                     <div className="cart-btn">
-                        <h6 className="cart-total">
-                           <span className="font-light">Total:</span> $ 542.00
-                        </h6>
-                        <Link href="/cart">
-                           <button type="button" className="btn btn-solid-default btn-block">
-                              Proceed to payment
-                           </button>
-                        </Link>
-                     </div>
-                  </div>
-               </>
-            </li>
+            <CartDropdown />
          </ul>
       </div>
    );

@@ -3,6 +3,7 @@ import Breadcrumb from "../../components/BreadCrumb";
 import SubscribeBox from "../../components/SubscribeBox";
 import CategoriesCard from "../../components/CategoriesCard";
 import { fetchApiCategories } from "../../common/fetchApi";
+import Head from "next/head";
 
 function Index() {
    const [data, setData] = useState([]);
@@ -12,6 +13,9 @@ function Index() {
 
    return (
       <>
+         <Head>
+            <title>All Categories</title>
+         </Head>
          <Breadcrumb title={"Shop Category"} />
 
          <section className="section-b-space">

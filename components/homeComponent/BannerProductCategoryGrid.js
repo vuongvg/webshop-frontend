@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 function BannerProductCategoryGrid({ dataBannerProduct }) {
-   console.log(`  ~ dataBannerProduct`, dataBannerProduct);
    useEffect(() => {
       (function ($) {
          "use strict";
@@ -67,26 +66,28 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                         </div>
 
                         <div className="banner-text">
-                           <div className="banner-content">
+                           <div className="banner-content ">
                               {/* <span
                                  className="span-top"
                                  dangerouslySetInnerHTML={{
                                     __html: dataBannerProduct.list[0].sub_title,
                                  }}
                               ></span> */}
-                              <span
+                              {/* <span
                                  className="span-top"
                                  dangerouslySetInnerHTML={{
                                     // __html: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                                     __html: "New " + dataBannerProduct[7].name,
                                     
                                  }}
-                              ></span>
-                              {/* <h2
+                              ></span> */}
+                              <h2
+                                 style={{ "textShadow": "-0.6px 0 #bbb, 0 0.6px #bbb, 0.6px 0 #bbb, 0 -0.6px #bbb" }}
                                  dangerouslySetInnerHTML={{
-                                    __html: dataBannerProduct.list[0].title,
+                                    // __html: dataBannerProduct.list[0].title,
+                                    __html: "New " + dataBannerProduct[7].name,
                                  }}
-                              ></h2> */}
+                              ></h2>
                               <button type="button" className="btn btn-solid-default">
                                  Shop Now
                               </button>
@@ -114,14 +115,16 @@ function BannerProductCategoryGrid({ dataBannerProduct }) {
                                  />
                               </div>
                               <div className="banner-text">
-                                 <div className="banner-content">
+                                 <div className="banner-content ">
                                     {/* <h3
                                        className="h-bottom"
                                        dangerouslySetInnerHTML={{
                                           __html: dataBannerProduct.list[1].title,
                                        }}
                                     ></h3> */}
+
                                     <h3
+                                       style={{ "textShadow": "-0.6px 0 #bbb, 0 0.6px #bbb, 0.6px 0 #bbb, 0 -0.6px #bbb" }}
                                        dangerouslySetInnerHTML={{
                                           __html: "New " + dataBannerProduct[6].name,
                                        }}

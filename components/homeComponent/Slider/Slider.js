@@ -6,7 +6,6 @@ import SliderItemClothes from '../Slider/SliderItemClothes';
 import SliderItemShoe from '../Slider/SliderItemShoe';
 
 function Slider({ dataSliser }) {
-   console.log('render');
 
    useEffect(() => {
         const sliderHome = $('.slick-2')

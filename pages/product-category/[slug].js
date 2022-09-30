@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fetchApiProductByCategory } from "../../common/fetchApi";
@@ -32,6 +33,15 @@ function ProductCategory() {
 
    return (
       <>
+         <Head>
+            <title>
+               {query.slug &&
+                  query.slug
+                     .split("-")
+                     .map((char) => char[0].toUpperCase() + char.slice(1))
+                     .join(" ")}
+            </title>
+         </Head>
          <Breadcrumb
             // title={data && data.list_products[0]?.name}
             bredcrumbList={[

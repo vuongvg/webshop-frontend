@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fetchApiSingleProductBySlug } from "../../common/fetchApi";
@@ -22,8 +23,14 @@ function Product() {
    // return 'Product'
    return (
       <>
+         <Head>
+            <title>{data.name}</title>
+         </Head>
          {data.categories && (
-            <Breadcrumb title={data.name} bredcrumbList={data.categories.map((category) => ({ href: "/product-category/" + category.slug, title: category.name }))} />
+            <Breadcrumb
+               title={data.name}
+               bredcrumbList={data.categories.map((category) => ({ href: "/product-category/" + category.slug, title: category.name }))}
+            />
          )}
          {
             // isLoading || isError || isFetching ? <PlaceHolderShopSection /> :

@@ -1,6 +1,6 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 
-function SelectSize({ size }, ref) {
+function SelectSize({ size,stock_quantity }, ref) {
    const [sizeSelect, setSizeSelect] = useState("");
    const [qty, setQty] = useState(1);
 
@@ -37,6 +37,7 @@ function SelectSize({ size }, ref) {
    };
 
    const changeQty = (qtyNumber) => {
+      console.log(`  ~ qtyNumber`, qtyNumber);
       if (qtyNumber >= 99) {
          setQty(99);
       } else {
@@ -81,9 +82,7 @@ function SelectSize({ size }, ref) {
                   name="quantity"
                   className="form-control input-number"
                   value={qty}
-                  onChange={(e) => {
-                     changeQty(Number(e.target.value));
-                  }}
+                  onChange={(e) => changeQty(Number(e.target.value))}
                />
                <span className="input-group-prepend">
                   <button type="button" className="btn quantity-right-plus" data-type="plus" data-field="" onClick={plusQty}>

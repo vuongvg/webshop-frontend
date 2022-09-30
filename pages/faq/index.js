@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 import { Fragment, useEffect } from "react";
 import Breadcrumb from "../../components/BreadCrumb";
 import SubscribeBox from "../../components/SubscribeBox";
@@ -11,16 +12,19 @@ import SubscribeBox from "../../components/SubscribeBox";
 // import { fetchApiFaq } from "../../src/api/Api_vuong/fetchApi";
 
 function Faq() {
-  //  const { isLoading, data, error, isError, isFetching } = useQuery("faq", fetchApiFaq);
-  //  useEffect(() => {
-  //     functionJquery();
-  //  }, [data]);
-  //  useEffect(() => {
-  //     errorModal(isError, error);
-  //  }, [error, isError]);
+   //  const { isLoading, data, error, isError, isFetching } = useQuery("faq", fetchApiFaq);
+   //  useEffect(() => {
+   //     functionJquery();
+   //  }, [data]);
+   //  useEffect(() => {
+   //     errorModal(isError, error);
+   //  }, [error, isError]);
 
    return (
       <>
+         <Head>
+            <title>Faq</title>
+         </Head>
          <Breadcrumb title={"How can we help you?"} />
          {/* FAQ Section Start */}
          <section className="faq-section mt-0">

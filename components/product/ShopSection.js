@@ -1,149 +1,61 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import ColorImage from "./ColorImage";
 import SelectSize from "./SelectSize";
 import Countdown from "./Countdown";
+import { fetchApiUpdateUserByCartlist, fetchApiUpdateUserByWishlist } from "../../common/fetchApi";
+import UserContext from "../../store/userContext";
+import { toast, ToastContainer } from "react-toastify";
+import { myToast, toastError, toastSuccess } from "../../common";
 
 function ShopSection(props = {}) {
    const router = useRouter();
    const colorRef = useRef();
    const sizeRef = useRef();
-   // return 'ShopSection'
+   const user = useContext(UserContext);
 
-   const {
-      slug,
-      id,
-      price,
-      name,
-      stock_quantity,
-      categories,
-      images,
-      on_sale,
-      shipping_required,
-      regular_price,
-      date_on_sale_to,
-      color,
-      stock_status,
-      size,
-      discount,
-   } = props;
+   const { slug, _id, price, name, categories, images, on_sale, regular_price, color, size, discount, stock_quantity } = props;
 
-   // const removeProductHandle = (id) => {
-   //     dispatch(productRemove(id));
-   //     toast.warning('Remove product wishlist successfully!', {
-   //         position: 'top-right',
-   //         autoClose: 2000,
-   //         hideProgressBar: true,
-   //         closeOnClick: true,
-   //         pauseOnHover: true,
-   //         draggable: true,
-   //         progress: undefined,
-   //     });
-   // };
+   const wishListHandle = async (item) => {
+      if (!user._id) return router.push("/login");
 
-   const addWislistHandle = () => {};
-   // const addWislistHandle = () => {
-   //     dispatch(
-   //         productAdded({
-   //             id,
-   //             image: images[0],
-   //             name,
-   //             price,
-   //             stock_status,
-   //             slug,
-   //         })
-   //     );
+      const result = await fetchApiUpdateUserByWishlist(user._id, item);
+      if (!result?.data?.modifiedCount) return toastError("Add product to wishlist failed !!!. Please try again");
+      user.handleWishList(item);
+      toastSuccess(
+         user.wishList.find((item) => item.slug === slug) ? "Remove product wishlist successfully!" : "Add product to wishlist successfully!"
+      );
+   };
 
-   //     toast.success('Add product to wishlist successfully!', {
-   //         position: 'top-right',
-   //         autoClose: 2000,
-   //         hideProgressBar: true,
-   //         closeOnClick: true,
-   //         pauseOnHover: true,
-   //         draggable: true,
-   //         progress: undefined,
-   //     });
-   // };
+   const handleAddcart = async () => {
+      if (!user._id) return router.push("/login");
+      let color = colorRef.current?.getColor();
+      let size = sizeRef.current?.getSize();
+      let qty = sizeRef.current?.getQty();
 
-   const handleAddcart = () => {};
-   // const handleAddcart = () => {
-   //     let color = colorRef.current?.getColor();
-   //     let size = sizeRef.current?.getSize();
-   //     let qty = sizeRef.current?.getQty();
+      if (!color) return toastError("You must choose the color!");
+      if (!size) return toastError("You must choose the size!");
 
-   //     if (!color) {
-   //         toast.error('You must choose the color!', {
-   //             position: 'top-right',
-   //             autoClose: 500,
-   //             hideProgressBar: true,
-   //             closeOnClick: true,
-   //             pauseOnHover: true,
-   //             draggable: true,
-   //             progress: undefined,
-   //         });
+      const item = {
+         _id,
+         image: images[0].src,
+         name,
+         price,
+         slug,
+         qty,
+         color: color,
+         size: size,
+      };
 
-   //         return;
-   //     }
-
-   //     if (!size) {
-   //         toast.error('You must choose the size!', {
-   //             position: 'top-right',
-   //             autoClose: 500,
-   //             hideProgressBar: true,
-   //             closeOnClick: true,
-   //             pauseOnHover: true,
-   //             draggable: true,
-   //             progress: undefined,
-   //         });
-
-   //         return;
-   //     }
-
-   //     const data = {
-   //         id,
-   //         image: images[0].src,
-   //         name,
-   //         price,
-   //         slug,
-   //         qty,
-   //         color: color,
-   //         size: size,
-   //     };
-
-   //     // dispatch(productCartRemove(id));
-
-   //     if (cartState.ids.includes(id)) {
-   //         let currentQty = cartState.entities[id].qty;
-   //         dispatch(
-   //             productCartUpdate({
-   //                 id,
-   //                 changes: { ...data, qty: currentQty + qty },
-   //             })
-   //         );
-   //         toast.success('Update product in cart successfully!', {
-   //             position: 'top-right',
-   //             autoClose: 2000,
-   //             hideProgressBar: true,
-   //             closeOnClick: true,
-   //             pauseOnHover: true,
-   //             draggable: true,
-   //             progress: undefined,
-   //         });
-   //     } else {
-   //         dispatch(productCartAdded(data));
-   //         toast.success('Add product to cart successfully!', {
-   //             position: 'top-right',
-   //             autoClose: 2000,
-   //             hideProgressBar: true,
-   //             closeOnClick: true,
-   //             pauseOnHover: true,
-   //             draggable: true,
-   //             progress: undefined,
-   //         });
-   //     }
-   // };
+      user.handleCartList(item);
+      toastSuccess(
+         user.cartList.find((cart) => cart._id === _id && cart.color === color && cart.size === size)
+            ? "Update product in cart successfully!"
+            : "Add product to cart successfully!"
+      );
+   };
 
    return (
       <section>
@@ -187,26 +99,14 @@ function ShopSection(props = {}) {
                               </h3>
 
                               <ColorImage ref={colorRef} color={color} />
-                              <SelectSize ref={sizeRef} size={size} />
+                              <SelectSize ref={sizeRef} size={size} stock_quantity={stock_quantity} />
 
                               <div className="product-buttons">
-                                 {/* {wishListState.ids.includes(id) ? ( */}
-                                 {0 ? (
-                                    <a
-                                       onClick={() => {
-                                          removeProductHandle(id);
-                                       }}
-                                       className="btn btn-solid"
-                                    >
-                                       <i className="fa fa-bookmark fz-16 me-2"></i>
-                                       <span>Un wishlist</span>
-                                    </a>
-                                 ) : (
-                                    <a onClick={addWislistHandle} className="btn btn-solid">
-                                       <i className="fa fa-bookmark fz-16 me-2"></i>
-                                       <span>WishList</span>
-                                    </a>
-                                 )}
+                                 <a onClick={() => wishListHandle({ images: images[0], name, price, slug, _id })} className="btn btn-solid">
+                                    <i className="fa fa-bookmark fz-16 me-2"></i>
+                                    <span>{user?._id && user.wishList.find((item) => item.slug === slug) ? "Un wishlist" : "WishList"}</span>
+                                 </a>
+
                                  <a onClick={handleAddcart} id="cartEffect" className="btn btn-solid hover-solid btn-animation">
                                     <i className="fa fa-shopping-cart"></i>
                                     <span>Add To Cart</span>

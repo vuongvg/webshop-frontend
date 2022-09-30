@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 import React, { useEffect } from "react";
 import Breadcrumb from "../../components/BreadCrumb";
 import SubscribeBox from "../../components/SubscribeBox";
@@ -6,6 +7,9 @@ import SubscribeBox from "../../components/SubscribeBox";
 export default function AboutUs() {
    return (
       <>
+         <Head>
+            <title>About Us</title>
+         </Head>
          <Breadcrumb title={"About Us"} />
          {/* team leader section Start */}
          <section className="overflow-hidden">

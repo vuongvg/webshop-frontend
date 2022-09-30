@@ -1,10 +1,8 @@
 import axios from "axios";
 import { setCookie} from "cookies-next";
 import { convertObjectToParams } from ".";
-const url = "http://localhost:5001/api";
-// const url = "https://webshop-sigma.vercel.app/api";
-
-// const url = "https://webshop-xi.vercel.app/";
+// const url = "http://localhost:5001/api";
+const url = "https://webshop-sigma.vercel.app/api";
 
 export const http = axios.create({ 
    baseURL: url,
